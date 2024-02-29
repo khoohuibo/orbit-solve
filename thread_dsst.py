@@ -168,8 +168,8 @@ def raan_flex(k, factor):
     print(myTLE)
     print(OrbitType.KEPLERIAN.convertType(derived_state_list[3].getOrbit()))
 
-    header = ['date', 'Distance']
-    with open('output_sso/raan_offset_%d_%d.csv' % (k, inc), 'w') as f:
+    header = ['date', 'Distance', 'beta_angle', 'beta_angle_alternate']
+    with open('output_45/raan_offset_%d_%d_three.csv' % (k, inc), 'w') as f:
         writer = csv.writer(f)
 
         writer.writerow(header)
@@ -178,7 +178,7 @@ def raan_flex(k, factor):
 
         f.close()
 
-    np.savez("output_sso/raan_offset_%d_sso" % (k), date, dist_list)
+    np.savez("output_45/raan_offset_%d_sso" % (k), date, dist_list)
 
     return raan_new, max(dist_list)
 
