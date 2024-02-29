@@ -164,7 +164,7 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
     
     return propagator
 
-def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=False, e=False, initialOrbit=False):
+def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=False, e=False, initialOrbit=False, DSST=True):
     if a == False:
         a = (rp + ra + 2 * Constants.WGS84_EARTH_EQUATORIAL_RADIUS) / 2.0    
     if e == False:
@@ -183,37 +183,37 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
     initialState = SpacecraftState(initialOrbit, satellite_mass) 
     
     
-    
-    minStep = 0.001
-    maxstep = 1000.0
-    initStep = 60.0
-    positionTolerance = 1.0 #1.0 * 10 ** (-3)
-    tolerances = NumericalPropagator.tolerances(positionTolerance, 
-                                                initialOrbit, 
-                                                initialOrbit.getType())
+    if DSST == False:
+        minStep = 0.001
+        maxstep = 1000.0
+        initStep = 60.0
+        positionTolerance = 1.0 #1.0 * 10 ** (-3)
+        tolerances = NumericalPropagator.tolerances(positionTolerance, 
+                                                    initialOrbit, 
+                                                    initialOrbit.getType())
 
-    integrator = DormandPrince853Integrator(minStep, maxstep, 
-        JArray_double.cast_(tolerances[0]),  # Double array of doubles needs to be casted in Python
-        JArray_double.cast_(tolerances[1]))
-    integrator.setInitialStepSize(initStep)
+        integrator = DormandPrince853Integrator(minStep, maxstep, 
+            JArray_double.cast_(tolerances[0]),  # Double array of doubles needs to be casted in Python
+            JArray_double.cast_(tolerances[1]))
+        integrator.setInitialStepSize(initStep)
 
-    propagator = NumericalPropagator(integrator)
-    propagator.setOrbitType(OrbitType.CARTESIAN)
-    propagator.setInitialState(initialState)
+        propagator = NumericalPropagator(integrator)
+        propagator.setOrbitType(OrbitType.CARTESIAN)
+        propagator.setInitialState(initialState)
 
-    propagator = add_force_models(propagator, earth, a/2, albedo=False)
-    """
-    minStep = initialState.getKeplerianPeriod()
-    maxStep = 100. * minStep
-    tolerances = DSSTPropagator.tolerances(1.0, initialOrbit)
+        propagator = add_force_models(propagator, earth, a/2, albedo=False)
+    else:
+        minStep = initialState.getKeplerianPeriod()
+        maxStep = 100. * minStep
+        tolerances = DSSTPropagator.tolerances(1.0, initialOrbit)
 
-    integrator = DormandPrince853Integrator(minStep, maxStep, 
-        JArray_double.cast_(tolerances[0]),  # Double array of doubles needs to be casted in Python
-        JArray_double.cast_(tolerances[1]))
+        integrator = DormandPrince853Integrator(minStep, maxStep, 
+            JArray_double.cast_(tolerances[0]),  # Double array of doubles needs to be casted in Python
+            JArray_double.cast_(tolerances[1]))
 
-    propagator = DSSTPropagator(integrator)
-    propagator.setInitialState(initialState, PropagationType.MEAN)
-    propagator = add_dsst_force_models(propagator, earth)
-    """
+        propagator = DSSTPropagator(integrator)
+        propagator.setInitialState(initialState, PropagationType.MEAN)
+        propagator = add_dsst_force_models(propagator, earth)
+
 
     return propagator

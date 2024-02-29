@@ -46,22 +46,22 @@ def get_ecliptic_longitude_of_sun(dat):
 def get_beta_angle(dat, raan, inc):
     RA_sun, dec_sun = get_ecliptic_longitude_of_sun(dat)
     RA_sun = get_solar_eclipitc_longitude_of_sun(dat)
-    print("RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun, raan, inc, dec_sun))
-    print("RA_sun_hrs: %f, dec_sun_deg: %f" % (math.degrees(RA_sun)/15, math.degrees(dec_sun)))
+    #print("RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun, raan, inc, dec_sun))
+    #rint("RA_sun_hrs: %f, dec_sun_deg: %f" % (math.degrees(RA_sun)/15, math.degrees(dec_sun)))
     comp_1 = math.cos(RA_sun) * math.sin(raan) * math.sin(inc)
     comp_2 = math.sin(RA_sun) * math.cos(math.radians(23.45)) * math.cos(raan) * math.sin(inc)
     comp_3 = math.sin(RA_sun) * math.sin(math.radians(23.45)) * math.cos(inc)
-    print(math.asin(comp_1 - comp_2 + comp_3))
+    #print(math.asin(comp_1 - comp_2 + comp_3))
     return math.asin(comp_1 - comp_2 + comp_3)
 
 def get_beta_angle_alternate(dat, raan, inc):
     RA_sun, dec_sun = get_ecliptic_longitude_of_sun(dat)
     RA_sun = get_solar_eclipitc_longitude_of_sun(dat)
-    print("RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun, raan, inc, dec_sun))
-    print("RA_sun_hrs: %f, dec_sun_deg: %f" % (math.degrees(RA_sun)/15, math.degrees(dec_sun)))
+    #print("RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun, raan, inc, dec_sun))
+    #print("RA_sun_hrs: %f, dec_sun_deg: %f" % (math.degrees(RA_sun)/15, math.degrees(dec_sun)))
     comp_1 = math.cos(dec_sun) * math.sin(inc) * math.sin(raan - RA_sun)
     comp_2 = math.sin(dec_sun) * math.cos(inc)
-    print(dat)
+    ##print(dat)
     print("beta_angle_alternate: %f" % math.degrees(math.asin(comp_1 + comp_2)))
     return math.asin(comp_1 + comp_2)
 

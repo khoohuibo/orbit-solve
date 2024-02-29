@@ -161,12 +161,12 @@ def raan_flex(k, factor):
                             0.0)
 
     myTLE = TLE.stateToTLE(state_list[3], tle_first_guess, FixedPointTleGenerationAlgorithm())
-    print(myTLE)
-    print(OrbitType.KEPLERIAN.convertType(state_list[3].getOrbit()))
+    #print(myTLE)
+    #print(OrbitType.KEPLERIAN.convertType(state_list[3].getOrbit()))
 
     myTLE = TLE.stateToTLE(derived_state_list[3], tle_first_guess, FixedPointTleGenerationAlgorithm())
-    print(myTLE)
-    print(OrbitType.KEPLERIAN.convertType(derived_state_list[3].getOrbit()))
+    #print(myTLE)
+    #print(OrbitType.KEPLERIAN.convertType(derived_state_list[3].getOrbit()))
 
     header = ['date', 'Distance', 'beta_angle', 'beta_angle_alternate']
     with open('output_45/raan_offset_%d_%d_three.csv' % (k, inc), 'w') as f:
@@ -174,11 +174,11 @@ def raan_flex(k, factor):
 
         writer.writerow(header)
         for j in range(len(date)):
-            writer.writerow([date[j], dist_list[j]])
+            writer.writerow([date[j], dist_list[j], beta_list[j], beta_list_alt[j]])
 
         f.close()
 
-    np.savez("output_45/raan_offset_%d_sso" % (k), date, dist_list)
+    np.savez("output_45/raan_offset_%d_three" % (k), date, dist_list)
 
     return raan_new, max(dist_list)
 
@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
     header = ['RAAN', 'Maximum Distance']
 
-    with open('output/raan_all_sso.csv', 'w', encoding='UTF8') as f:
+    with open('output/raan_all_45_three.csv', 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
 
         # write the header
@@ -222,7 +222,7 @@ if __name__ == "__main__":
 
         f.close()
 
-    np.savez("output/raan_all_sso", raan_list, max_dist_list)
+    np.savez("output/raan_all_45_three", raan_list, max_dist_list)
 
     plt.scatter(raan_list, max_dist_list)
     
