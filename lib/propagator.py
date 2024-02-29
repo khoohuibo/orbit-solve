@@ -24,10 +24,13 @@ from orekit import JArray_double
 
 from lib.helper_functions import get_angle_rez, alternate_delta_t
 
-def get_ecef(date, dat_0, vel_abs, pos, vel, pv_list, inertialFrame, ITRF, inclination):
+def get_ecef(date, dat_0, vel_abs, pos, vel, pv_list, inertialFrame, ITRF, inclination, t_delta_0=False):
     We = 7.272 * 10 ** -5
-
-    t_delta_0 = alternate_delta_t(veloc=vel_abs[0], inclination=inclination)
+    trip = False
+    if t_delta_0 == False:
+        t_delta_0 = alternate_delta_t(veloc=vel_abs[0], inclination=inclination)
+    else:
+        trip = True
 
     for k in range(len(date)):
 
@@ -43,8 +46,10 @@ def get_ecef(date, dat_0, vel_abs, pos, vel, pv_list, inertialFrame, ITRF, incli
         #lon_g0 = get_GMST(dat, pog, 0)
 
         # find time difference required.
-
-        t_delta = alternate_delta_t(veloc=vel_abs[k], inclination=inclination) 
+        if trip == True:
+            t_delta = t_delta_0
+        else:
+            t_delta = alternate_delta_t(veloc=vel_abs[k], inclination=inclination) 
 
         #comp_a = - lon_g0 - We * t_delta 
         comp_a = - We * t_delta 
@@ -65,10 +70,10 @@ def get_ecef(date, dat_0, vel_abs, pos, vel, pv_list, inertialFrame, ITRF, incli
         vel_ecef_new = pvECF.getVelocity()
 
         pos_ecef_new_tmp = np.array([pos_ecef_new.getX(), pos_ecef_new.getY(),pos_ecef_new.getZ()])
-        pos_ecef_new_tmp = r_3.dot(pos_ecef_new_tmp)
+        #pos_ecef_new_tmp = r_3.dot(pos_ecef_new_tmp)
 
         vel_ecef_new_tmp = np.array([vel_ecef_new.getX(), vel_ecef_new.getY(),vel_ecef_new.getZ()])
-        vel_ecef_new_tmp = r_3.dot(vel_ecef_new_tmp)
+        #vel_ecef_new_tmp = r_3.dot(vel_ecef_new_tmp)
 
         pos_ecef_alt = Vector3D(float(pos_ecef_new_tmp[0]), float(pos_ecef_new_tmp[1]), float(pos_ecef_new_tmp[2]))
         vel_ecef_alt = Vector3D(float(vel_ecef_new_tmp[0]), float(vel_ecef_new_tmp[1]), float(vel_ecef_new_tmp[2]))
@@ -121,9 +126,6 @@ def add_dsst_force_models(propagator, earth):
 
     return propagator
     
-
-
-
 
 def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True, albedo=True):
 
@@ -181,7 +183,7 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
     initialState = SpacecraftState(initialOrbit, satellite_mass) 
     
     
-    """
+    
     minStep = 0.001
     maxstep = 1000.0
     initStep = 60.0
@@ -198,6 +200,8 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
     propagator = NumericalPropagator(integrator)
     propagator.setOrbitType(OrbitType.CARTESIAN)
     propagator.setInitialState(initialState)
+
+    propagator = add_force_models(propagator, earth, a/2, albedo=False)
     """
     minStep = initialState.getKeplerianPeriod()
     maxStep = 100. * minStep
@@ -209,9 +213,7 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
 
     propagator = DSSTPropagator(integrator)
     propagator.setInitialState(initialState, PropagationType.MEAN)
-
-
-    #propagator = add_force_models(propagator, earth, a/2, albedo=False)
     propagator = add_dsst_force_models(propagator, earth)
+    """
 
     return propagator

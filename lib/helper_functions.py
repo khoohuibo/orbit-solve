@@ -1,6 +1,69 @@
 import math
 import numpy as np
 import datetime
+import pytz
+import astropy.time
+import astropy.coordinates
+
+def get_solar_eclipitc_longitude_of_sun(dat):
+    time = astropy.time.Time(dat)
+    sun = astropy.coordinates.get_body("sun", time=time)
+    frame = astropy.coordinates.GeocentricTrueEcliptic(equinox=time)
+
+    return math.radians(sun.transform_to(frame).lon.value)
+
+def get_solar_declination(dat):
+    new_date = datetime.datetime(dat.year, 1, 1, tzinfo=pytz.utc)
+    dayofyear = dat - new_date
+    print(dayofyear.days)
+    return math.degrees(math.radians(23.5) * math.cos(math.radians(360) * (dayofyear.days - 172)/365))
+
+def get_ecliptic_longitude_of_sun(dat):
+    """
+    https://aa.usno.navy.mil/faq/sun_approx
+    """
+    jd = get_julian_datetime(dat)
+
+    D = jd - 2451545.0 # Number of days since January 1.5 2000 UTC
+
+    g = 357.529 + 0.98560028 * D # Mean anomaly of the Sun (degrees)
+    q = 280.459 + 0.98564736 * D # Mean longitude of the Sun (degrees)
+
+    # Geocentric apparent ecliptic longitude of the sun (adjusted for aberration) (radians)
+    L = math.radians(q + 1.915 * math.sin(math.radians(g)) + 0.020 * math.sin(math.radians(2 * g)))
+
+    # Distance of the Sun from the Earth
+    R = 1.00015 - 0.01671 * math.cos(g) - 0.00014 * math.cos(2 * g)
+    e = math.radians(23.439 - 0.00000036 * D)
+    #RA = math.atan((math.cos(e) * math.sin(L))/math.cos(L))
+    RA = math.atan2((math.cos(e) * math.sin(L)), math.cos(L))
+    if RA < 0:
+        RA = math.pi * 2 + RA
+    d = math.asin(math.sin(e) * math.sin(L))
+
+    return RA, d
+
+def get_beta_angle(dat, raan, inc):
+    RA_sun, dec_sun = get_ecliptic_longitude_of_sun(dat)
+    RA_sun = get_solar_eclipitc_longitude_of_sun(dat)
+    print("RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun, raan, inc, dec_sun))
+    print("RA_sun_hrs: %f, dec_sun_deg: %f" % (math.degrees(RA_sun)/15, math.degrees(dec_sun)))
+    comp_1 = math.cos(RA_sun) * math.sin(raan) * math.sin(inc)
+    comp_2 = math.sin(RA_sun) * math.cos(math.radians(23.45)) * math.cos(raan) * math.sin(inc)
+    comp_3 = math.sin(RA_sun) * math.sin(math.radians(23.45)) * math.cos(inc)
+    print(math.asin(comp_1 - comp_2 + comp_3))
+    return math.asin(comp_1 - comp_2 + comp_3)
+
+def get_beta_angle_alternate(dat, raan, inc):
+    RA_sun, dec_sun = get_ecliptic_longitude_of_sun(dat)
+    RA_sun = get_solar_eclipitc_longitude_of_sun(dat)
+    print("RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun, raan, inc, dec_sun))
+    print("RA_sun_hrs: %f, dec_sun_deg: %f" % (math.degrees(RA_sun)/15, math.degrees(dec_sun)))
+    comp_1 = math.cos(dec_sun) * math.sin(inc) * math.sin(raan - RA_sun)
+    comp_2 = math.sin(dec_sun) * math.cos(inc)
+    print(dat)
+    print("beta_angle_alternate: %f" % math.degrees(math.asin(comp_1 + comp_2)))
+    return math.asin(comp_1 + comp_2)
 
 def get_julian_datetime(date):
     """

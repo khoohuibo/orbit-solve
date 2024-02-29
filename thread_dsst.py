@@ -6,14 +6,14 @@ import sys, getopt
 
 
 from orekit.pyhelpers import setup_orekit_curdir, absolutedate_to_datetime,datetime_to_absolutedate
-from org.orekit.orbits import OrbitType
+from org.orekit.orbits import OrbitType, KeplerianOrbit
 from org.orekit.time import AbsoluteDate, TimeScalesFactory
 from org.orekit.utils import  IERSConventions
 from org.orekit.frames import FramesFactory
 from org.orekit.propagation.analytical.tle import TLE
 from org.orekit.propagation.analytical.tle.generation import FixedPointTleGenerationAlgorithm
 
-from lib.helper_functions import get_abs_vel, mean_motion, distance_between_two
+from lib.helper_functions import get_abs_vel, mean_motion, distance_between_two, get_beta_angle, get_beta_angle_alternate
 from lib.propagator import set_up_prop, get_ecef
 
 from orekit import JArray_double
@@ -26,7 +26,7 @@ utc = TimeScalesFactory.getUTC()
 
 ra = 600.01 *  1000         #  Apogee
 rp = 600 * 1000         #  Perigee
-i = math.radians(45.4)      # inclination
+i = math.radians(97.6)      # inclination
 omega = math.radians(0.0)   # perigee argument
 raan = math.radians(0.0)  # right ascension of ascending node
 lv = math.radians(0.0)    # True anomaly
@@ -43,7 +43,7 @@ propagator = set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, I
 print(propagator.getInitialState().getOrbit())
 
 extrapDate = AbsoluteDate(2025, 4, 1, 0, 0, 00.000, utc)
-finalDate = extrapDate.shiftedBy(60.0*10)
+finalDate = extrapDate.shiftedBy(60.0*5)
 
 state_list = []
 tle_state_list = []
@@ -59,9 +59,8 @@ acc = []
 date = []
 dist_list = []
 
-
 while (extrapDate.compareTo(finalDate) <= 0.0):  
-
+    
     #pv = propagator.getPVCoordinates(extrapDate, inertialFrame)
     pv_state = propagator.propagate(extrapDate)
     state_list.append(pv_state)
@@ -102,8 +101,8 @@ propagator = set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, I
 raan_list = []
 max_dist_list = []
 
-def raan_flex(k):
-    raan_new = raan_alt + math.radians(k/10)
+def raan_flex(k, factor):
+    raan_new = raan_alt + math.radians(k/factor)
     derivedpropagator = set_up_prop(rp, ra, inc, aop, raan_new, lv_new, newEpoch, inertialFrame, ITRF, a=sma, e=ecc)
 
     print(derivedpropagator.getInitialState().getOrbit())
@@ -114,14 +113,24 @@ def raan_flex(k):
     state_list = []
     derived_state_list = []
 
+    beta_list = []
+    beta_list_alt = []
+
     extrapDate = AbsoluteDate(2025, 4, 1, 0, 0, 00.000, utc)
-    finalDate = extrapDate.shiftedBy(60.0*60*24*365)
+    finalDate = extrapDate.shiftedBy(60.0*60*24*365*3)
 
     while (extrapDate.compareTo(finalDate) <= 0.0):  
 
         #pv = propagator.getPVCoordinates(extrapDate, inertialFrame)
         pv_state = propagator.propagate(extrapDate)
         state_list.append(pv_state)
+
+        int_orbit = KeplerianOrbit(OrbitType.KEPLERIAN.convertType(pv_state.getOrbit()))
+        beta_angle = get_beta_angle(absolutedate_to_datetime(extrapDate), int_orbit.getRightAscensionOfAscendingNode(), int_orbit.getI())
+        beta_angle_alt = get_beta_angle_alternate(absolutedate_to_datetime(extrapDate), int_orbit.getRightAscensionOfAscendingNode(), int_orbit.getI())
+        beta_list.append(math.degrees(beta_angle))
+        beta_list_alt.append(math.degrees(beta_angle_alt))
+        print("beta_angle: %f, beta_angle_alt: %f" % (beta_angle, beta_angle_alt))
 
         derived_pv_state = derivedpropagator.propagate(extrapDate)
         derived_state_list.append(derived_pv_state)
@@ -151,16 +160,16 @@ def raan_flex(k):
                             100,
                             0.0)
 
-    myTLE = TLE.stateToTLE(state_list[-1], tle_first_guess, FixedPointTleGenerationAlgorithm())
+    myTLE = TLE.stateToTLE(state_list[3], tle_first_guess, FixedPointTleGenerationAlgorithm())
     print(myTLE)
-    print(OrbitType.KEPLERIAN.convertType(state_list[-1].getOrbit()))
+    print(OrbitType.KEPLERIAN.convertType(state_list[3].getOrbit()))
 
-    myTLE = TLE.stateToTLE(derived_state_list[-1], tle_first_guess, FixedPointTleGenerationAlgorithm())
+    myTLE = TLE.stateToTLE(derived_state_list[3], tle_first_guess, FixedPointTleGenerationAlgorithm())
     print(myTLE)
-    print(OrbitType.KEPLERIAN.convertType(derived_state_list[-1].getOrbit()))
+    print(OrbitType.KEPLERIAN.convertType(derived_state_list[3].getOrbit()))
 
     header = ['date', 'Distance']
-    with open('output_45/raan_offset_%d_%d.csv' % (k, inc), 'w') as f:
+    with open('output_sso/raan_offset_%d_%d.csv' % (k, inc), 'w') as f:
         writer = csv.writer(f)
 
         writer.writerow(header)
@@ -169,7 +178,7 @@ def raan_flex(k):
 
         f.close()
 
-    np.savez("output_45/raan_offset_%d_45" % (k, inc), date, dist_list)
+    np.savez("output_sso/raan_offset_%d_sso" % (k), date, dist_list)
 
     return raan_new, max(dist_list)
 
@@ -179,6 +188,10 @@ if __name__ == "__main__":
         opts, args = getopt.getopt(sys.argv[1:], "sef", ["start=", "end=", "factor="])
     except getopt.GetoptError:
         print("thread_dsst.py --start=<deg*10> --end=<deg*10> --factor=<0..100>")
+
+    start = 0
+    end = 1
+    factor = 1
 
     for opt, arg in opts:
         if opt in ('-s', "--start"):
@@ -197,7 +210,7 @@ if __name__ == "__main__":
 
     header = ['RAAN', 'Maximum Distance']
 
-    with open('output/raan_all_45.csv', 'w', encoding='UTF8') as f:
+    with open('output/raan_all_sso.csv', 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
 
         # write the header
@@ -209,10 +222,9 @@ if __name__ == "__main__":
 
         f.close()
 
-    np.savez("output/raan_all_45", raan_list, max_dist_list)
+    np.savez("output/raan_all_sso", raan_list, max_dist_list)
 
     plt.scatter(raan_list, max_dist_list)
-    plt.title.set_text('derived distance')
-
+    
     plt.legend()
     plt.show()
