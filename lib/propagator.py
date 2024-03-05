@@ -70,10 +70,10 @@ def get_ecef(date, dat_0, vel_abs, pos, vel, pv_list, inertialFrame, ITRF, incli
         vel_ecef_new = pvECF.getVelocity()
 
         pos_ecef_new_tmp = np.array([pos_ecef_new.getX(), pos_ecef_new.getY(),pos_ecef_new.getZ()])
-        #pos_ecef_new_tmp = r_3.dot(pos_ecef_new_tmp)
+        pos_ecef_new_tmp = r_3.dot(pos_ecef_new_tmp)
 
         vel_ecef_new_tmp = np.array([vel_ecef_new.getX(), vel_ecef_new.getY(),vel_ecef_new.getZ()])
-        #vel_ecef_new_tmp = r_3.dot(vel_ecef_new_tmp)
+        vel_ecef_new_tmp = r_3.dot(vel_ecef_new_tmp)
 
         pos_ecef_alt = Vector3D(float(pos_ecef_new_tmp[0]), float(pos_ecef_new_tmp[1]), float(pos_ecef_new_tmp[2]))
         vel_ecef_alt = Vector3D(float(vel_ecef_new_tmp[0]), float(vel_ecef_new_tmp[1]), float(vel_ecef_new_tmp[2]))
@@ -100,15 +100,17 @@ def get_ecef(date, dat_0, vel_abs, pos, vel, pv_list, inertialFrame, ITRF, incli
             #print(newEpoch, t_delta)
             break
     
-    return derivedOrbit_alt, seedOrbit, newEpoch
+    return derivedOrbit_alt, seedOrbit, newEpoch, t_delta
 
-def add_dsst_force_models(propagator, earth):
+def add_dsst_force_models(propagator, earth, max_drag=False):
 
     cswl = CssiSpaceWeatherData("SpaceWeather-All-v1.2.txt")
 
     atmosphere = NRLMSISE00(cswl, CelestialBodyFactory.getSun(), earth)
-
-    cross_section = 0.02
+    if max_drag == False:
+        cross_section = 0.02
+    else:
+        cross_section = 0.32
     cd = 2.2
     isotropic_drag = IsotropicDrag(cross_section, cd)
 
@@ -164,7 +166,7 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
     
     return propagator
 
-def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=False, e=False, initialOrbit=False, DSST=True):
+def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=False, e=False, initialOrbit=False, DSST=True, max_drag=False):
     if a == False:
         a = (rp + ra + 2 * Constants.WGS84_EARTH_EQUATORIAL_RADIUS) / 2.0    
     if e == False:
@@ -213,7 +215,7 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
 
         propagator = DSSTPropagator(integrator)
         propagator.setInitialState(initialState, PropagationType.MEAN)
-        propagator = add_dsst_force_models(propagator, earth)
+        propagator = add_dsst_force_models(propagator, earth, max_drag)
 
 
     return propagator

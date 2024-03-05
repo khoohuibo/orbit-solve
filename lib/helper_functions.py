@@ -15,7 +15,7 @@ def get_solar_eclipitc_longitude_of_sun(dat):
 def get_solar_declination(dat):
     new_date = datetime.datetime(dat.year, 1, 1, tzinfo=pytz.utc)
     dayofyear = dat - new_date
-    print(dayofyear.days)
+    #print(dayofyear.days)
     return math.degrees(math.radians(23.5) * math.cos(math.radians(360) * (dayofyear.days - 172)/365))
 
 def get_ecliptic_longitude_of_sun(dat):
@@ -62,7 +62,7 @@ def get_beta_angle_alternate(dat, raan, inc):
     comp_1 = math.cos(dec_sun) * math.sin(inc) * math.sin(raan - RA_sun)
     comp_2 = math.sin(dec_sun) * math.cos(inc)
     ##print(dat)
-    print("beta_angle_alternate: %f" % math.degrees(math.asin(comp_1 + comp_2)))
+    #print("beta_angle_alternate: %f" % math.degrees(math.asin(comp_1 + comp_2)))
     return math.asin(comp_1 + comp_2)
 
 def get_julian_datetime(date):

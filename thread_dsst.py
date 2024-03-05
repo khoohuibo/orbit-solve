@@ -130,7 +130,7 @@ def raan_flex(k, factor):
         beta_angle_alt = get_beta_angle_alternate(absolutedate_to_datetime(extrapDate), int_orbit.getRightAscensionOfAscendingNode(), int_orbit.getI())
         beta_list.append(math.degrees(beta_angle))
         beta_list_alt.append(math.degrees(beta_angle_alt))
-        print("beta_angle: %f, beta_angle_alt: %f" % (beta_angle, beta_angle_alt))
+       # print("beta_angle: %f, beta_angle_alt: %f" % (beta_angle, beta_angle_alt))
 
         derived_pv_state = derivedpropagator.propagate(extrapDate)
         derived_state_list.append(derived_pv_state)

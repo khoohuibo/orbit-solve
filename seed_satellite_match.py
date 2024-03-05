@@ -32,7 +32,7 @@ omega = math.radians(0.0)   # perigee argument
 raan = math.radians(0.0)  # right ascension of ascending node
 lv = math.radians(0.0)    # True anomaly
 
-epochDate = AbsoluteDate(2025, 4, 1, 0, 0, 00.000, utc)
+epochDate = AbsoluteDate(2025, 6, 1, 0, 0, 00.000, utc)
 initialDate = epochDate
 
 inertialFrame = FramesFactory.getEME2000()
@@ -43,7 +43,7 @@ propagator = set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, I
 
 print(propagator.getInitialState().getOrbit())
 
-extrapDate = AbsoluteDate(2025, 4, 1, 0, 0, 00.000, utc)
+extrapDate = AbsoluteDate(2025, 6, 1, 0, 0, 00.000, utc)
 finalDate = extrapDate.shiftedBy(60.0*10)
 
 state_list = []
@@ -112,7 +112,7 @@ def raan_flex(k):
     state_list = []
     derived_state_list = []
 
-    extrapDate = AbsoluteDate(2025, 4, 1, 0, 0, 00.000, utc)
+    extrapDate = AbsoluteDate(2025, 6, 1, 0, 0, 00.000, utc)
     finalDate = extrapDate.shiftedBy(60.0*60*24*365)
 
     while (extrapDate.compareTo(finalDate) <= 0.0):  
@@ -159,7 +159,7 @@ def raan_flex(k):
 
     
     header = ['date', 'Distance']
-    with open('output_45/raan_offset_%d_45.csv' % k, 'w') as f:
+    with open('output_45/raan_offset_%d_45_june_2025.csv' % k, 'w') as f:
         writer = csv.writer(f)
 
         writer.writerow(header)
