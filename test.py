@@ -21,8 +21,3 @@ d = math.asin(math.sin(e) * math.sin(L))
 print(jd, D, g, q, L, math.degrees(L), R, e)
 print(360+math.degrees(RA), 360+math.degrees(d))
 print(RA, d)
-
-g = -4614.824413
-q = -4692.131
-L = -4690.377707
-e = 23.4408162

@@ -26,11 +26,11 @@ vm = orekit.initVM()
 setup_orekit_curdir()
 utc = TimeScalesFactory.getUTC()
 
-ra = 600.01 *  1000         #  Apogee
-rp = 600 * 1000         #  Perigee
-i = math.radians(97.6)      # inclination
+ra = 421 *  1000         #  Apogee
+rp = 414 * 1000         #  Perigee
+i = math.radians(51.6)      # inclination
 omega = math.radians(0.0)   # perigee argument
-raan = math.radians(157.5)  # right ascension of ascending node
+raan = math.radians(0.0)  # right ascension of ascending node
 lv = math.radians(0.0)    # True anomaly
 
 epochDate = AbsoluteDate(2025, 7, 1, 0, 0, 00.000, utc)
@@ -106,7 +106,7 @@ tle_first_guess = TLE(99997,
                         100,
                         0.0)
 print("HERE HERE HERE!")
-print(OrbitType.KEPLERIAN.convertType(state_list[138].getOrbit()))
+print(OrbitType.KEPLERIAN.convertType(state_list[1].getOrbit()))
 myTLE = TLE.stateToTLE(state_list[138], tle_first_guess, FixedPointTleGenerationAlgorithm())
 print(myTLE)
 #print(OrbitType.KEPLERIAN.convertType(state_list[3].getOrbit()))
@@ -146,10 +146,14 @@ state_list = []
 derived_state_list = []
 
 beta_list_sun = []
+beta_list = []
+beta_list_alt = []
 derived_beta_list_sun=[]
 
+raan_list= []
+
 extrapDate = AbsoluteDate(2025, 7, 1, 0, 0, 00.000, utc)
-finalDate = extrapDate.shiftedBy(60.0*60*24*365*3)
+finalDate = extrapDate.shiftedBy(60.0*60*24*365)
 first = False
 sun = CelestialBodyFactory.getSun();
 sun = PVCoordinatesProvider.cast_(sun)  # But we want the PVCoord interface
@@ -162,10 +166,21 @@ while (extrapDate.compareTo(finalDate) <= 0.0):
     pv = pv_state.getPVCoordinates(inertialFrame)
 
     pos_sun = sun.getPVCoordinates(extrapDate, inertialFrame).getPosition()
+    print(pos_sun)
     #pos_sun_new = sun.getPosition(extrapDate, inertialFrame)
     beta_angle_new = 0.5 * math.pi - Vector3D.angle(pos_sun, pv.getMomentum())
+    print("vector_angle: %f" % math.degrees(Vector3D.angle(pos_sun, pv.getMomentum())))
 
     beta_list_sun.append(math.degrees(beta_angle_new))
+
+    int_orbit = KeplerianOrbit(OrbitType.KEPLERIAN.convertType(pv_state.getOrbit()))
+    print(int_orbit)
+    raan_list.append(math.degrees(int_orbit.getRightAscensionOfAscendingNode()))
+    #print(math.degrees(int_orbit.getRightAscensionOfAscendingNode()))
+    beta_angle = get_beta_angle(absolutedate_to_datetime(extrapDate), int_orbit.getRightAscensionOfAscendingNode(), int_orbit.getI())
+    #beta_angle_alt = get_beta_angle_alternate(absolutedate_to_datetime(extrapDate), int_orbit.getRightAscensionOfAscendingNode(), int_orbit.getI())
+    #beta_list.append(math.degrees(beta_angle))
+    #beta_list_alt.append(math.degrees(beta_angle_alt))
 
     derived_pv_state = derivedpropagator.propagate(extrapDate)
     derived_state_list.append(derived_pv_state)
@@ -178,13 +193,12 @@ while (extrapDate.compareTo(finalDate) <= 0.0):
 
     derived_beta_list_sun.append(math.degrees(beta_angle_new))
 
-
     dist = distance_between_two(pv_state.getPosition(), derived_pv_state.getPosition())/1000
     dist_list.append(dist)
 
     date.append(absolutedate_to_datetime(extrapDate))
-    print(extrapDate, end="\r")
-    extrapDate = extrapDate.shiftedBy(24*3600.0)
+    print(extrapDate, end="\r\n")
+    extrapDate = extrapDate.shiftedBy(3600.0)
 
 header = ['date', 'distance', 'beta_angle_sun', 'derived_beta_angle_sun']
 with open('output_sso/beta_three_sso_july_2025_true_delayed.csv', 'w') as f:
@@ -207,19 +221,25 @@ print(OrbitType.KEPLERIAN.convertType(derived_state_list[-1].getOrbit()))
 
 val, idx = min((val, idx) for (idx, val) in enumerate(beta_list_sun))
 
-#print(date[idx])
-#print(OrbitType.KEPLERIAN.convertType(state_list[idx].getOrbit()))
-#print(beta_list_sun[idx])
+print(date[idx])
+print(OrbitType.KEPLERIAN.convertType(state_list[idx].getOrbit()))
+print(beta_list_sun[idx])
 
 val, idx = max((val, idx) for (idx, val) in enumerate(beta_list_sun))
 
-#print(date[idx])
-#print(OrbitType.KEPLERIAN.convertType(state_list[idx].getOrbit()))
-#print(beta_list_sun[idx])
+print(date[idx])
+print(OrbitType.KEPLERIAN.convertType(state_list[idx].getOrbit()))
+print(beta_list_sun[idx])
 
 for i in range(len(date)):
     if dist_list[i] <= 1000:
         print("date: %s, dist: %f" % (date[i], dist_list[i]))
 
-plt.plot(date, dist_list)
+#plt.plot(date, dist_list)
+plt.plot(date, beta_list_sun)
+#plt.plot(date, beta_list)
+#plt.plot(date, beta_list_alt)
+plt.plot(date, derived_beta_list_sun)
+plt.legend(['1', '2', '3', '4']) 
+#plt.plot(date, raan_list)
 plt.show()

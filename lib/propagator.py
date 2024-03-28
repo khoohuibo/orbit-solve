@@ -132,7 +132,7 @@ def add_dsst_force_models(propagator, earth, max_drag=False):
 def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True, albedo=True):
 
     if gravity:
-        gravityProvider = GravityFieldFactory.getNormalizedProvider(10, 10)
+        gravityProvider = GravityFieldFactory.getNormalizedProvider(2, 0)
         propagator.addForceModel(HolmesFeatherstoneAttractionModel(FramesFactory.getITRF(IERSConventions.IERS_2010, True), gravityProvider))
 
     if drag:
@@ -166,7 +166,7 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
     
     return propagator
 
-def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=False, e=False, initialOrbit=False, DSST=True, max_drag=False):
+def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=False, e=False, initialOrbit=False, DSST=False, max_drag=False):
     if a == False:
         a = (rp + ra + 2 * Constants.WGS84_EARTH_EQUATORIAL_RADIUS) / 2.0    
     if e == False:
@@ -189,7 +189,7 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
         minStep = 0.001
         maxstep = 1000.0
         initStep = 60.0
-        positionTolerance = 1.0 #1.0 * 10 ** (-3)
+        positionTolerance = 1.0 * 10 ** (-3)
         tolerances = NumericalPropagator.tolerances(positionTolerance, 
                                                     initialOrbit, 
                                                     initialOrbit.getType())
@@ -203,7 +203,7 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
         propagator.setOrbitType(OrbitType.CARTESIAN)
         propagator.setInitialState(initialState)
 
-        propagator = add_force_models(propagator, earth, a/2, albedo=False)
+        propagator = add_force_models(propagator, earth, a/2, drag=False, solar=False, albedo=False)
     else:
         minStep = initialState.getKeplerianPeriod()
         maxStep = 100. * minStep
