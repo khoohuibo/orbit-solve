@@ -49,15 +49,15 @@ def get_beta_angle(dat, raan, inc):
     dec_sun = get_solar_declination(dat)
     s = np.array([math.cos(RA_sun), math.cos(math.radians(23.45))*math.sin(RA_sun), math.sin(math.radians(23.45))*math.sin(RA_sun)])
     n = np.array([math.sin(inc) * math.sin(raan), -math.sin(inc)*math.cos(raan), math.cos(inc)])
-    print(math.degrees(math.acos(np.dot(s, n))))
-    print(math.degrees(0.5 * math.pi - math.acos(np.dot(s, n))))
+    #print(math.degrees(math.acos(np.dot(s, n))))
+    #print(math.degrees(0.5 * math.pi - math.acos(np.dot(s, n))))
     #print("RA_sun: %f, RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun_2, RA_sun, raan, inc, dec_sun))
     #print("RA_sun: %f, RA_sun: %f, raan: %f, inc: %f, dec_sun: %f" % (RA_sun_2, RA_sun, raan, inc, dec_sun))
     #rint("RA_sun_hrs: %f, dec_sun_deg: %f" % (math.degrees(RA_sun)/15, math.degrees(dec_sun)))
     comp_1 = math.cos(RA_sun) * math.sin(raan) * math.sin(inc)
     comp_2 = math.sin(RA_sun) * math.cos(math.radians(23.45)) * math.cos(raan) * math.sin(inc)
     comp_3 = math.sin(RA_sun) * math.sin(math.radians(23.45)) * math.cos(inc)
-    print(math.degrees(math.asin(comp_1 - comp_2 + comp_3)))
+    #print(math.degrees(math.asin(comp_1 - comp_2 + comp_3)))
     return math.asin(comp_1 - comp_2 + comp_3)
 
 
@@ -190,6 +190,9 @@ def r3(angle):
             [0,0,1]]))
 
 def get_abs_vel(vel_tmp):
+    return math.sqrt((vel_tmp.getX())**2 + (vel_tmp.getY())**2 + (vel_tmp.getZ())**2)
+
+def get_abs_acc(vel_tmp):
     return math.sqrt((vel_tmp.getX())**2 + (vel_tmp.getY())**2 + (vel_tmp.getZ())**2)
 
 def distance_between_two(p, p2):

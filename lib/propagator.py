@@ -114,6 +114,8 @@ def add_dsst_force_models(propagator, earth, max_drag=False):
     cd = 2.2
     isotropic_drag = IsotropicDrag(cross_section, cd)
 
+    drag_drivers = isotropic_drag.getDragParametersDrivers()
+
     drag_force = DragForce(atmosphere, isotropic_drag)
 
     gravityProvider = GravityFieldFactory.getUnnormalizedProvider(10, 10)
@@ -126,13 +128,13 @@ def add_dsst_force_models(propagator, earth, max_drag=False):
     rad = IsotropicRadiationSingleCoefficient(0.24, 1.0)
     propagator.addForceModel(DSSTSolarRadiationPressure(CelestialBodyFactory.getSun(), earth, rad, gravityProvider.getMu()))
 
-    return propagator
+    return propagator, drag_drivers
     
 
-def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True, albedo=True):
-
+def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True, albedo=True, max_drag=False):
+    drag_drivers = None
     if gravity:
-        gravityProvider = GravityFieldFactory.getNormalizedProvider(2, 0)
+        gravityProvider = GravityFieldFactory.getNormalizedProvider(2, 2)
         propagator.addForceModel(HolmesFeatherstoneAttractionModel(FramesFactory.getITRF(IERSConventions.IERS_2010, True), gravityProvider))
 
     if drag:
@@ -140,9 +142,14 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
 
         atmosphere = NRLMSISE00(cswl, CelestialBodyFactory.getSun(), earth)
 
-        cross_section = 0.02
+        if max_drag == False:
+            cross_section = 0.02
+        else:
+            cross_section = 0.32
         cd = 2.2
         isotropic_drag = IsotropicDrag(cross_section, cd)
+
+        drag_drivers = isotropic_drag.getDragParametersDrivers()
 
         drag_force = DragForce(atmosphere, isotropic_drag)
 
@@ -164,9 +171,9 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
         
         propagator.addForceModel(albedo_pressure_force)
     
-    return propagator
+    return propagator, drag_drivers
 
-def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=False, e=False, initialOrbit=False, DSST=False, max_drag=False):
+def set_up_prop(i, omega, raan, lv, epochDate, inertialFrame, ITRF, rp=0, ra=0, a=False, e=False, initialOrbit=False, DSST=True, max_drag=False):
     if a == False:
         a = (rp + ra + 2 * Constants.WGS84_EARTH_EQUATORIAL_RADIUS) / 2.0    
     if e == False:
@@ -203,7 +210,7 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
         propagator.setOrbitType(OrbitType.CARTESIAN)
         propagator.setInitialState(initialState)
 
-        propagator = add_force_models(propagator, earth, a/2, drag=False, solar=False, albedo=False)
+        propagator, drag_drivers = add_force_models(propagator, earth, a/2, drag=False, solar=False,  albedo=False, max_drag=max_drag)
     else:
         minStep = initialState.getKeplerianPeriod()
         maxStep = 100. * minStep
@@ -215,7 +222,74 @@ def set_up_prop(rp, ra, i, omega, raan, lv, epochDate, inertialFrame, ITRF, a=Fa
 
         propagator = DSSTPropagator(integrator)
         propagator.setInitialState(initialState, PropagationType.MEAN)
-        propagator = add_dsst_force_models(propagator, earth, max_drag)
+        propagator, drag_drivers = add_dsst_force_models(propagator, earth, max_drag=max_drag)
 
 
-    return propagator
+    return propagator, drag_drivers
+
+def toggle_drag_manuever(og_driver, derived_driver, a_hd=False, b_hd=False):
+    if a_hd:
+        og_driver.get(1).setValue(35.2)
+    else:
+        og_driver.get(1).setValue(2.2)
+    if b_hd:
+        derived_driver.get(1).setValue(35.2)
+    else:
+        derived_driver.get(1).setValue(2.2)
+
+
+def manuever_sequence(currentDate, og_driver, derived_driver, seqeunce=None, firstDate=None, secondDate=None, thirdDate=None, delayed=True, og_first=True, once=False, manu_1=False, manu_2=False):
+    if seqeunce is not None:
+        firstDate = seqeunce[0]
+        secondDate = seqeunce[1]
+        thirdDate = seqeunce[2]
+        once = seqeunce[3][0]
+        manu_1 = seqeunce[3][1]
+        manu_2 = seqeunce[3][2]
+        delayed = seqeunce[4][0]
+        og_first = seqeunce[4][1]
+    
+    if not once:
+        if currentDate.compareTo(firstDate) >= 0.0:
+            if delayed:
+                if og_first:
+                    toggle_drag_manuever(og_driver, derived_driver, False, True)
+                else:
+                    toggle_drag_manuever(og_driver, derived_driver, True, False)
+            else:
+                if og_first:
+                    toggle_drag_manuever(og_driver, derived_driver, True, False)
+                else:
+                    toggle_drag_manuever(og_driver, derived_driver, False, True)
+            once = True
+            manu_1 = True
+            return once, manu_1, manu_2
+    
+    if manu_1:
+        if currentDate.compareTo(secondDate) >= 0.0:
+            if delayed:
+                toggle_drag_manuever(og_driver, derived_driver, False, False)
+            else:
+                if og_first:
+                    toggle_drag_manuever(og_driver, derived_driver, False, True)
+                else:
+                    toggle_drag_manuever(og_driver, derived_driver, True, False)
+            manu_1 = False
+            manu_2 = True
+            return once, manu_1, manu_2
+    
+    if manu_2:
+        if currentDate.compareTo(thirdDate) >= 0.0:
+            if delayed:
+                toggle_drag_manuever(og_driver, derived_driver, False, False)
+            else:
+                if og_first:
+                    toggle_drag_manuever(og_driver, derived_driver, False, False)
+                else:
+                    toggle_drag_manuever(og_driver, derived_driver, False, False)
+            once = True
+            manu_1 = False
+            manu_2 = False
+            return once, manu_1, manu_2
+    
+    return [once, manu_1, manu_2]
