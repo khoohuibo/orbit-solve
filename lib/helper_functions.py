@@ -4,6 +4,7 @@ import datetime
 import pytz
 import astropy.time
 import astropy.coordinates
+import string
 
 def get_solar_eclipitc_longitude_of_sun(dat):
     time = astropy.time.Time(dat)
@@ -201,3 +202,59 @@ def distance_between_two(p, p2):
 def get_angle_rez(ra):
     return (math.pi/2) - math.asin(6378/ra)
 
+def checksum(line):
+    L = line.strip()
+    cksum = 0
+    for i in range(68):
+        c = L[i]
+        if c == ' ' or c == '.' or c == '+' or c in string.ascii_letters:
+            continue
+        elif c == '-':
+            cksum = cksum + 1
+        else:
+            cksum = cksum + int(c)
+
+    cksum %= 10
+    
+    return cksum
+
+def find_first_last(l):
+    first = ""
+    last = ""
+    mark = False
+
+    for i in range(len(l)):
+        if mark:
+            break
+        error = False
+        for k in range(len(l[i])):
+            if "returned error" in l[i][k]:
+                error = True
+                break
+        if error:
+            error = False
+            continue
+        else:
+            mark = True
+            first = l[i]
+            break
+    
+    mark = False
+
+    for i in range(len(l)):
+        if mark:
+            break
+        error = False
+        reversed_index = len(l)-(1+i)
+        for k in range(len(l[reversed_index])):
+            if "returned error" in l[reversed_index][k]:
+                error = True
+                break
+        if error:
+            error = False
+            continue
+        else:
+            mark = True
+            last = l[reversed_index]
+    
+    return first, last

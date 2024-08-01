@@ -9,8 +9,8 @@ from org.hipparchus.ode.nonstiff import DormandPrince853Integrator
 from org.orekit.propagation import SpacecraftState, PropagationType
 
 from org.orekit.utils import Constants, IERSConventions
-from org.orekit.frames import FramesFactory
-from org.orekit.bodies import OneAxisEllipsoid, CelestialBodyFactory
+from org.orekit.frames import FramesFactory, TopocentricFrame
+from org.orekit.bodies import OneAxisEllipsoid, CelestialBodyFactory, GeodeticPoint
 from org.hipparchus.geometry.euclidean.threed import Vector3D
 from org.orekit.forces.gravity.potential import GravityFieldFactory
 from org.orekit.forces.gravity import HolmesFeatherstoneAttractionModel
@@ -21,8 +21,9 @@ from org.orekit.utils import PVCoordinates
 from org.orekit.forces.radiation import IsotropicRadiationSingleCoefficient, SolarRadiationPressure, KnockeRediffusedForceModel
 from orekit.pyhelpers import datetime_to_absolutedate
 from orekit import JArray_double
+from org.orekit.propagation.analytical.tle import TLE, TLEPropagator
 
-from lib.helper_functions import get_angle_rez, alternate_delta_t
+from lib.helper_functions import get_angle_rez, alternate_delta_t, checksum 
 
 def get_ecef(date, dat_0, vel_abs, pos, vel, pv_list, inertialFrame, ITRF, inclination, t_delta_0=False):
     We = 7.272 * 10 ** -5
@@ -227,6 +228,43 @@ def set_up_prop(i, omega, raan, lv, epochDate, inertialFrame, ITRF, rp=0, ra=0, 
 
     return propagator, drag_drivers
 
+def process_tle(input_file):
+    with open(input_file, 'r') as f:
+        output = f.read()
+
+    output = output.splitlines()
+    s = list(output[1])
+    s[9:15] = ['2', '3', '1', '0', '9', 'G']
+    s[-1] = str(checksum(''.join(s)))
+    s = ''.join(s)
+    #print(s)
+    t = output[2]
+
+    mytle = TLE(s,t)
+
+    print (mytle)
+    print ('Epoch :',mytle.getDate())
+
+    ITRF = FramesFactory.getITRF(IERSConventions.IERS_2010, True)
+    earth = OneAxisEllipsoid(Constants.WGS84_EARTH_EQUATORIAL_RADIUS, 
+                            Constants.WGS84_EARTH_FLATTENING, 
+                            ITRF)
+
+    longitude = math.radians(103.8198)
+    latitude  = math.radians(1.3521)
+    altitude  = 125.0
+    station = GeodeticPoint(latitude, longitude, altitude)
+    station_frame = TopocentricFrame(earth, station, "CRISP")
+
+    inertialFrame = FramesFactory.getEME2000()
+
+    propagator = TLEPropagator.selectExtrapolator(mytle)
+
+    tle_epoch = mytle.getDate()
+
+    return propagator, station_frame, inertialFrame, tle_epoch, mytle
+
+
 def toggle_drag_manuever(og_driver, derived_driver, a_hd=False, b_hd=False):
     if a_hd:
         og_driver.get(1).setValue(35.2)
@@ -238,7 +276,7 @@ def toggle_drag_manuever(og_driver, derived_driver, a_hd=False, b_hd=False):
         derived_driver.get(1).setValue(2.2)
 
 
-def manuever_sequence(currentDate, og_driver, derived_driver, seqeunce=None, firstDate=None, secondDate=None, thirdDate=None, delayed=True, og_first=True, once=False, manu_1=False, manu_2=False):
+def manuever_sequence(currentDate, og_driver, derived_driver, seqeunce=None, firstDate=None, secondDate=None, thirdDate=None, delayed=True, og_first=True, once=False, manu_1=False, manu_2=False):  
     if seqeunce is not None:
         firstDate = seqeunce[0]
         secondDate = seqeunce[1]
@@ -248,48 +286,77 @@ def manuever_sequence(currentDate, og_driver, derived_driver, seqeunce=None, fir
         manu_2 = seqeunce[3][2]
         delayed = seqeunce[4][0]
         og_first = seqeunce[4][1]
+        der_hd = seqeunce[3][4]
+        seed_hd = seqeunce[3][3]
     
     if not once:
         if currentDate.compareTo(firstDate) >= 0.0:
             if delayed:
                 if og_first:
-                    toggle_drag_manuever(og_driver, derived_driver, False, True)
+                    seed_hd = False
+                    der_hd = True
+                    #print("og first firstdate delayed")
+                    #toggle_drag_manuever(og_driver, derived_driver, False, True)
                 else:
-                    toggle_drag_manuever(og_driver, derived_driver, True, False)
+                    seed_hd = True
+                    der_hd = False
+                    #print("firstdate delayed")
+                    #toggle_drag_manuever(og_driver, derived_driver, True, False)
             else:
                 if og_first:
-                    toggle_drag_manuever(og_driver, derived_driver, True, False)
+                    seed_hd = True
+                    der_hd = False
+                    #print("ogfirst firstdate delayed")
+                    #toggle_drag_manuever(og_driver, derived_driver, True, False)
                 else:
-                    toggle_drag_manuever(og_driver, derived_driver, False, True)
+                    seed_hd = False
+                    der_hd = True
+                    #print("firstdate")
+                    #toggle_drag_manuever(og_driver, derived_driver, False, True)
+            toggle_drag_manuever(og_driver, derived_driver, seed_hd, der_hd)
             once = True
             manu_1 = True
-            return once, manu_1, manu_2
+            return once, manu_1, manu_2, seed_hd, der_hd
     
     if manu_1:
         if currentDate.compareTo(secondDate) >= 0.0:
             if delayed:
-                toggle_drag_manuever(og_driver, derived_driver, False, False)
+                seed_hd = False
+                der_hd = False
+                #toggle_drag_manuever(og_driver, derived_driver, False, False)
             else:
                 if og_first:
-                    toggle_drag_manuever(og_driver, derived_driver, False, True)
+                    seed_hd = False
+                    der_hd = True
+                    #toggle_drag_manuever(og_driver, derived_driver, False, True)
                 else:
-                    toggle_drag_manuever(og_driver, derived_driver, True, False)
+                    seed_hd = True
+                    der_hd = False
+                    #toggle_drag_manuever(og_driver, derived_driver, True, False)
+            toggle_drag_manuever(og_driver, derived_driver, seed_hd, der_hd)
             manu_1 = False
             manu_2 = True
-            return once, manu_1, manu_2
+            return once, manu_1, manu_2, seed_hd, der_hd
     
     if manu_2:
         if currentDate.compareTo(thirdDate) >= 0.0:
             if delayed:
-                toggle_drag_manuever(og_driver, derived_driver, False, False)
+                seed_hd = False
+                der_hd = False
+                #toggle_drag_manuever(og_driver, derived_driver, False, False)
             else:
                 if og_first:
-                    toggle_drag_manuever(og_driver, derived_driver, False, False)
+                    seed_hd = False
+                    der_hd = False
+                    #toggle_drag_manuever(og_driver, derived_driver, False, False)
                 else:
-                    toggle_drag_manuever(og_driver, derived_driver, False, False)
+                    seed_hd = False
+                    der_hd = False
+                    #toggle_drag_manuever(og_driver, derived_driver, False, False)
+            toggle_drag_manuever(og_driver, derived_driver, seed_hd, der_hd)
             once = True
             manu_1 = False
             manu_2 = False
-            return once, manu_1, manu_2
+            return once, manu_1, manu_2, seed_hd, der_hd
     
-    return [once, manu_1, manu_2]
+    return [once, manu_1, manu_2, seed_hd, der_hd]

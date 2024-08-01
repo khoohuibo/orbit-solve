@@ -1,0 +1,88 @@
+--------------------------------------------------
+-------EPS-------
+                    _________
+                   |         |                           I(mA),  lup,Ton(s),Toff(s)
+              +-------------------+  0 (H1-47) --> EN:1 [   47,    0,     0,      0]
+  1:          |                   |
+ 1738 mV ->   |  Voltage          |  1 (H1-49) --> EN:0 [    7,    0,     0,      0]
+ 1657 mA ->   | 08299 mV          |
+ 2879 mW ->   |                   |  2 (H1-51) --> EN:1 [  105,    0,     0,      0]
+  2:          |  Input            |
+ 1721 mV ->   | 00892 mA 07402 mW |  3 (H1-48) --> EN:1 [  371,    0,     0,      0]
+ 1637 mA ->   |                   |
+ 2817 mW ->   |  Output           |  4 (H1-50) --> EN:1 [   70,    0,     0,      0]
+  3:          | 00476 mA 03950 mW |
+ 1747 mV ->   |                   |  5 (H1-52) --> EN:1 [   36,    0,     0,      0]
+ 1630 mA ->   |  Efficiency:      |
+ 2847 mW ->   |  In: 86 %         |  6         --> EN:0
+              |                   |
+              |  Normal           |  7         --> EN:0
+              +-------------------+
+
+            1       2       3       4       5       6      mean
+ Temp:    +12     +10     +11      +8      +3      +3     +7.83
+
+          Boot   Cause    PPTm
+ Count:     16       1       2
+
+        WDTi2c  WDTgnd WDTcsp0 WDTcsp1
+ Count:      0      15       0       0
+  Left:    564   167699       5       5
+
+--------------------------------------------------
+-------AX100-------
+Board Temp: 12.0
+PA Temp: 12.3
+Active Config: 1
+Boot Count: 61
+Boot Cause: 0x0100
+Last Contact: 1702152673
+Tx Duty Cycle: 13
+--------------------------------------------------
+-------AX2150-------
+Board Temp: 10.4
+PA Temp: 9.4
+Boot Count: 54
+Boot Cause: 0x00
+Last Contact: 1713433215
+Tx Duty Cycle: 0
+--------------------------------------------------
+-------CubeADCS-------
+Handler enabled (adcs_leop_complete): false
+Last TLM pull time: 6 -> 1970-01-01T00:00:06Z
+Handler error: 3 2 1 3 2 1 3 2 1 3 
+Current Estimation Mode: 6
+Current Control Mode: 6
+Commanded Estimation Mode: 6
+Commanded Control Mode: 6
+ADCS-OBC transfer status: 100%
+ADCS sys pwr: 0x55
+Star+RW pwr: 0x54
+adc+acs modes: 0x66
+adcs op mode + sys_en: 0xF1
+sys_en flags: 0x87
+Roll angle: 1971
+Pitch angle: -475
+Yaw angle: -94
+Roll rate: 0
+Pitch rate: 5
+Raw rate: 0
+3V3 current: 151
+5V current: 66
+Vbatt current: 0
+MCU temp: 9
+CubeMag temp: 5088
+--------------------------------------------------
+-------OBC-------
+MCU temp: 8.8
+RAM temp: 9.0
+Boot count: 173
+Boot cause: 4
+Reset cause: 6
+OBC mode: 3 -> AUTONOMOUS
+Switch states: 0x10
+1713487237.971460 W default: Mission in the past: 1707275280 -> 2024-02-07T03:08:00Z
+--------------------------------------------------
+Tx unixtime: 1713487239 -> 2024-04-19T00:40:39Z
+--------------------------------------------------
+bcn-handler: csv file saved to /home/nuspace/NuSpace/mcts-NuLIoN/hk_packets/NuLIoN_beacon/bcn-1713487239.csv

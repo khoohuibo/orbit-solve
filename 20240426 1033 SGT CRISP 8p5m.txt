@@ -1,0 +1,1310 @@
+csp-term # watch 100 ping 4 1000 200
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098824.200396 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.393 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098825.301005 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.254 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098826.401509 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.281 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098827.502008 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.352 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098828.602490 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.251 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098829.702897 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.314 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098830.803411 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.272 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098831.903947 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.284 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098833.004505 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.369 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098834.104979 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.303 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098835.205476 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.358 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098836.305965 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.228 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098837.406427 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.301 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098838.506931 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.333 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098839.607434 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.261 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098840.707900 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.344 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098841.808388 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.275 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098842.908925 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.243 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098844.009410 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.269 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098845.109920 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.248 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098846.210348 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.305 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098847.310850 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.342 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098848.411330 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.326 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098849.511906 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.336 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098850.612537 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.284 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098851.713001 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.328 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098852.813547 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.352 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098853.914143 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.286 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098855.014695 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.293 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098856.115142 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.237 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098857.215537 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.254 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098858.315941 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.328 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098859.416551 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.231 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098860.517053 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.340 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098861.617525 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.268 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098862.717968 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.263 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098863.818423 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.415 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098864.919056 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.244 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098866.019436 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.343 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098867.119967 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.209 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098868.220337 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.311 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098869.320859 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.286 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098870.421350 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.350 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098871.521902 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.411 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098872.622678 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.521 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098873.723178 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.293 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098874.823738 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.450 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098875.924416 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.268 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098877.024871 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.366 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098878.125487 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.330 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098879.226001 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.427 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098880.326636 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.357 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098881.427262 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.383 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098882.527851 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.316 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098883.628484 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.307 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098884.728959 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.301 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098885.829469 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.255 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098886.929841 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.355 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098888.030348 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.277 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098889.130803 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.237 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098890.231160 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.265 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098891.331637 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.218 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098892.432054 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.351 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098893.532572 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.353 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098894.633089 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.259 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098895.733668 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.519 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098896.834262 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.353 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098897.934751 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.337 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098899.035288 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.217 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098900.135656 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.260 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098901.236152 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.347 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098902.336644 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.329 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098903.437232 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.299 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098904.537754 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.332 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098905.638262 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.503 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098906.738923 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.264 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098907.839824 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.468 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098908.940460 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.305 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098910.041038 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.382 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098911.141547 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.225 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098912.241942 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.267 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098913.342507 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.281 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098914.442974 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.288 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098915.543513 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.299 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098916.644027 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.299 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098917.744555 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.270 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098918.845013 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.281 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098919.945529 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.242 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098921.045906 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.269 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098922.146364 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098922.383287 I csp: INP: S 4, D 20, Dp 59, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 237.174 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098922.483737 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098922.887695 I csp: INP: S 4, D 20, Dp 60, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 404.221 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098922.988125 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.253 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098924.088536 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.340 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098925.189057 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.312 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098926.289520 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098926.531534 I csp: INP: S 4, D 20, Dp 32, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 242.251 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098926.632011 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.315 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098927.732540 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.227 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098928.832997 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.269 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098929.933447 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.265 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098931.033925 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.225 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098932.134300 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.310 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098933.234855 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098933.462155 I csp: INP: S 4, D 20, Dp 43, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 227.507 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098933.562503 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098933.973418 I csp: INP: S 4, D 20, Dp 44, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 411.127 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098934.073900 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098934.485431 I csp: INP: S 4, D 20, Dp 45, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 411.730 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098934.585807 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098935.005140 I csp: INP: S 4, D 20, Dp 46, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 419.550 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098935.105524 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098935.475166 I csp: INP: S 4, D 20, Dp 47, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 369.895 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098935.575530 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098936.015038 I csp: INP: S 4, D 20, Dp 48, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 439.798 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714098936.115877 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714098936.506702 I csp: INP: S 4, D 20, Dp 51, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 391.345 ms
+csp-term # eps hk
+1714098936.507226 I csp: OUT: S 20, D 2, Dp 8, Sp 52, Pr 1, Fl 0x01, Sz 2 VIA: ZMQHUB (16)
+1714098936.964823 I csp: INP: S 2, D 20, Dp 52, Sp 8, Pr 1, Fl 0x01, Sz 135 VIA: ZMQHUB
+                    _________
+                   |         |                           I(mA),  lup,Ton(s),Toff(s)
+              +-------------------+  0 (H1-47) --> EN:1 [   50,    0,     0,      0]
+  1:          |                   |
+ 3691 mV ->   |  Voltage          |  1 (H1-49) --> EN:0 [    7,    0,     0,      0]
+ 1215 mA ->   | 08215 mV          |
+ 4484 mW ->   |                   |  2 (H1-51) --> EN:1 [  105,    0,     0,      0]
+  2:          |  Input            |
+ 3694 mV ->   | 01495 mA 12281 mW |  3 (H1-48) --> EN:1 [   75,    0,     0,      0]
+ 1236 mA ->   |                   |
+ 4565 mW ->   |  Output           |  4 (H1-50) --> EN:1 [   70,    0,     0,      0]
+  3:          | 00346 mA 02842 mW |
+ 3699 mV ->   |                   |  5 (H1-52) --> EN:1 [   50,    0,     0,      0]
+ 1232 mA ->   |  Efficiency:      |
+ 4557 mW ->   |  In: 90 %         |  6         --> EN:0
+              |                   |
+              |  Normal           |  7         --> EN:0
+              +-------------------+
+
+            1       2       3       4       5       6      mean
+ Temp:    +12      +9     +10      +7      +5      +5     +8.00
+
+          Boot   Cause    PPTm
+ Count:     16       1       2
+
+        WDTi2c  WDTgnd WDTcsp0 WDTcsp1
+ Count:      0      15       0       0
+  Left:    578   74749       5       5
+
+csp-term # ax100 hk
+1714098936.965982 I csp: OUT: S 20, D 5, Dp 7, Sp 54, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714098937.422609 I csp: INP: S 5, D 20, Dp 54, Sp 7, Pr 1, Fl 0x01, Sz 104 VIA: ZMQHUB
+  0x0000 temp_brd        I16 62 
+  0x0002 temp_pa         I16 64 
+  0x0004 last_rssi       I16 -124 
+  0x0006 last_rferr      I16 -326 
+  0x0008 tx_count        U32 63472 
+  0x000C rx_count        U32 0 
+  0x0010 tx_bytes        U32 15614112 
+  0x0014 rx_bytes        U32 0 
+  0x0018 active_conf     U8  1 
+  0x0020 boot_count      U16 61 
+  0x0024 boot_cause      U32 0x00000100 
+  0x0028 last_contact    U32 1702152673 
+  0x002C bgnd_rssi       I16 -128 
+  0x002E tx_duty         U8  13 
+  0x0030 tot_tx_count    U32 1525759 
+  0x0034 tot_rx_count    U32 7666 
+  0x0038 tot_tx_bytes    U32 375283963 
+  0x003C tot_rx_bytes    U32 9100 
+csp-term # ax2150 hk
+1714098937.423195 I csp: OUT: S 20, D 4, Dp 7, Sp 57, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714098937.960538 I csp: INP: S 4, D 20, Dp 57, Sp 7, Pr 1, Fl 0x11, Sz 192 VIA: ZMQHUB
+1714098937.960583 W csp: csp_sfp_recv_fp: 4:7, invalid message, offset 180 (expected 0), length: 180, totalsize 540
+1714098937.960677 E default: get_hk, download_table_spec:-5
+Command 'ax2150 hk' executed, but returned error: GS_ERROR_IO(-5) (-5) after 537 mS
+csp-term # 
+csp-term # rparam init 1 4
+csp-term # rparam getall
+Downloading table content for table 4 from server 1
+1714098937.961300 I csp: OUT: S 20, D 1, Dp 7, Sp 58, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714098938.009070 I csp: INP: S 4, D 20, Dp 57, Sp 7, Pr 1, Fl 0x11, Sz 192 VIA: ZMQHUB
+1714098938.461568 I csp: INP: S 1, D 20, Dp 58, Sp 7, Pr 1, Fl 0x01, Sz 72 VIA: ZMQHUB
+  0x0000 fs_mounted      BL  true 
+  0x0001 ram_image       BL  true 
+  0x0002 temp_mcu        I16 44 
+  0x0004 temp_ram        I16 46 
+  0x0006 i_GSSB1         U16 0 
+  0x0008 i_GSSB2         U16 0 
+  0x000A i_Flash         U16 0 
+  0x000C i_PWM           U16 0 
+  0x0010 resetcause      U32 6 
+  0x0014 bootcause       U32 4 
+  0x0018 bootcount       U16 173 
+  0x001C clock           U32 1714098938 
+  0x0020 uptime          U32 9145999 
+csp-term # 
+csp-term # rparam init 1 1
+csp-term # rparam getall
+Downloading table content for table 1 from server 1
+1714098938.463644 I csp: OUT: S 20, D 1, Dp 7, Sp 59, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714098938.964076 I csp: INP: S 1, D 20, Dp 29, Sp 57, Pr 2, Fl 0x01, Sz 199 VIA: ZMQHUB
+Beacon: NuLIoN
+--------------------------------------------------
+-------EPS-------
+                    _________
+                   |         |                           I(mA),  lup,Ton(s),Toff(s)
+              +-------------------+  0 (H1-47) --> EN:1 [   50,    0,     0,      0]
+  1:          |                   |
+ 3691 mV ->   |  Voltage          |  1 (H1-49) --> EN:0 [    7,    0,     0,      0]
+ 1148 mA ->   | 08180 mV          |
+ 4237 mW ->   |                   |  2 (H1-51) --> EN:1 [  607,    0,     0,      0]
+  2:          |  Input            |
+ 3694 mV ->   | 01416 mA 11582 mW |  3 (H1-48) --> EN:1 [   75,    0,     0,      0]
+ 1168 mA ->   |                   |
+ 4314 mW ->   |  Output           |  4 (H1-50) --> EN:1 [   72,    0,     0,      0]
+  3:          | 00680 mA 05562 mW |
+ 3690 mV ->   |                   |  5 (H1-52) --> EN:1 [   43,    0,     0,      0]
+ 1168 mA ->   |  Efficiency:      |
+ 4309 mW ->   |  In: 90 %         |  6         --> EN:0
+              |                   |
+              |  Normal           |  7         --> EN:0
+              +-------------------+
+
+            1       2       3       4       5       6      mean
+ Temp:    +12      +9      +9      +7      +5      +5     +7.83
+
+          Boot   Cause    PPTm
+ Count:     16       1       2
+
+        WDTi2c  WDTgnd WDTcsp0 WDTcsp1
+ Count:      0      15       0       0
+  Left:    559   74788       5       5
+
+--------------------------------------------------
+-------AX100-------
+Board Temp: 6.2
+PA Temp: 6.4
+Active Config: 1
+Boot Count: 61
+Boot Cause: 0x0100
+Last Contact: 1702152673
+Tx Duty Cycle: 13
+--------------------------------------------------
+-------AX2150-------
+Board Temp: 6.0
+PA Temp: 5.9
+Boot Count: 54
+Boot Cause: 0x00
+Last Contact: 1714098938
+Tx Duty Cycle: 0
+--------------------------------------------------
+-------CubeADCS-------
+Handler enabled (adcs_leop_complete): false
+Last TLM pull time: 6 -> 1970-01-01T00:00:06Z
+Handler error: 3 2 1 3 2 1 3 2 1 3 
+Current Estimation Mode: 6
+Current Control Mode: 6
+Commanded Estimation Mode: 6
+Commanded Control Mode: 6
+ADCS-OBC transfer status: 100%
+ADCS sys pwr: 0x55
+Star+RW pwr: 0x54
+adc+acs modes: 0x66
+adcs op mode + sys_en: 0xF1
+sys_en flags: 0x87
+Roll angle: 1971
+Pitch angle: -475
+Yaw angle: -94
+Roll rate: 0
+Pitch rate: 5
+Raw rate: 0
+3V3 current: 151
+5V current: 66
+Vbatt current: 0
+MCU temp: 9
+CubeMag temp: 5088
+--------------------------------------------------
+-------OBC-------
+MCU temp: 4.4
+RAM temp: 4.6
+Boot count: 173
+Boot cause: 4
+Reset cause: 6
+OBC mode: 3 -> AUTONOMOUS
+Switch states: 0x10
+1714098938.965161 W default: Mission in the past: 1707275280 -> 2024-02-07T03:08:00Z
+--------------------------------------------------
+Tx unixtime: 1714098938 -> 2024-04-26T02:35:38Z
+--------------------------------------------------
+bcn-handler: csv file saved to /home/nuspace/NuSpace/mcts-NuLIoN/hk_packets/NuLIoN_beacon/bcn-1714098938.csv
+1714098938.999767 I csp: INP: S 1, D 20, Dp 59, Sp 7, Pr 1, Fl 0x01, Sz 190 VIA: ZMQHUB
+  0x0000 gssb1_pwr_en    BL  false 
+  0x0001 gssb2_pwr_en    BL  false 
+  0x0002 flash_pwr_en    BL  true 
+  0x0003 pwm_pwr_en      BL  false 
+  0x0004 swload_img1     STR "/flash/OTASU_20240109.bin" 
+  0x0024 swload_cnt1     U16 1 
+  0x0026 swload_img2     STR "/flash/new_image2.bin" 
+  0x0046 swload_cnt2     U16 0 
+  0x0048 fs_default      U8  0 
+  0x0049 fs_en_p0        BL  true 
+  0x004A fs_en_p1        BL  true 
+  0x004B log_fram_en     BL  false 
+  0x004C log_mask        STR "" 
+  0x008C tsync_node      U8  0 
+  0x008E tsync_intv      U16 0 
+  0x0090 spi0_cs_mode    U8  0 
+csp-term # 
+csp-term # uptime 1
+1714098939.000247 I csp: OUT: S 20, D 1, Dp 6, Sp 60, Pr 2, Fl 0x01, Sz 0 VIA: ZMQHUB (16)
+1714098939.429381 I csp: INP: S 1, D 20, Dp 60, Sp 6, Pr 2, Fl 0x01, Sz 8 VIA: ZMQHUB
+Uptime of node 1 is 105d 20h 33m 20s
+csp-term # 
+csp-term # obc timesync
+Obtaining round trip time... 5s timeout
+1714098939.430604 I csp: OUT: S 20, D 1, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 48 VIA: ZMQHUB (16)
+1714098939.886372 I csp: INP: S 1, D 20, Dp 61, Sp 1, Pr 2, Fl 0x01, Sz 52 VIA: ZMQHUB
+Round Trip Time: 456ms
+Compensation Time: 0.228s
+Current local time and date:	Fri Apr 26 10:35:39 2024
+Epoch Time: 			1714098939.886588095
+Compensated Transmit Time:	1714098940.114588095
+1714098939.886677 I csp: OUT: S 20, D 1, Dp 25, Sp 62, Pr 2, Fl 0x01, Sz 48 VIA: ZMQHUB (16)
+1714098940.335893 I csp: INP: S 1, D 20, Dp 62, Sp 25, Pr 2, Fl 0x01, Sz 12 VIA: ZMQHUB
+Current Time at Gnd Station:	1714098940.336078518
+Received Time from OBC:		1714098940.114635095
+csp-term # 
+csp-term # 
+csp-term # c
+Unknown command 'c'
+csp-term # cubeadcs tlm
+1714098940.337364 I csp: OUT: S 20, D 1, Dp 10, Sp 63, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+Command 'cubeadcs tlm' executed, but returned error: GS_ERROR_UNKNOWN(-2005) (-2005) after 1000 mS
+csp-term # cubeadcs get gyro_rates
+1714098941.337847 I csp: OUT: S 20, D 1, Dp 10, Sp 32, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714098941.671549 I csp: INP: S 1, D 20, Dp 63, Sp 10, Pr 2, Fl 0x01, Sz 97 VIA: ZMQHUB
+1714098941.678743 I csp: INP: S 1, D 20, Dp 32, Sp 10, Pr 2, Fl 0x01, Sz 10 VIA: ZMQHUB
+CubeADCS: Rate Sensor rates (TLM ID:155)
+================================================
+Xrate: 0.02 °/s
+Yrate: -0.07 °/s
+Zrate: -0.02 °/s
+RAW bytes:
+resp_u8[0]:0x02    resp_u8[1]:0x00    resp_u8[2]:0xF9    resp_u8[3]:0xFF    resp_u8[4]:0xFE    resp_u8[5]:0xFF    
+csp-term # cubeadcs get estimated_rates
+1714098941.679195 I csp: OUT: S 20, D 1, Dp 10, Sp 33, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714098942.127183 I csp: INP: S 1, D 20, Dp 33, Sp 10, Pr 2, Fl 0x01, Sz 10 VIA: ZMQHUB
+CubeADCS: Estimated angular rates (TLM ID:147)
+================================================
+Xrate: 0.00 °/s
+Yrate: -0.02 °/s
+Zrate: 0.00 °/s
+RAW bytes:
+resp_u8[0]:0x00    resp_u8[1]:0x00    resp_u8[2]:0xFE    resp_u8[3]:0xFF    resp_u8[4]:0x00    resp_u8[5]:0x00    
+csp-term # cubeadcs get attitude
+1714098942.128080 I csp: OUT: S 20, D 1, Dp 10, Sp 34, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714098942.561009 I csp: INP: S 1, D 20, Dp 34, Sp 10, Pr 2, Fl 0x01, Sz 10 VIA: ZMQHUB
+CubeADCS: Estimated Attitude Angles (TLM ID:146)
+================================================
+Estimated Roll:  0.53 °
+Estimated Pitch: 0.28 °
+Estimated Yaw:   0.25 °
+resp_u8[0]:0x35    resp_u8[1]:0x00    resp_u8[2]:0x1C    resp_u8[3]:0x00    resp_u8[4]:0x19    resp_u8[5]:0x00    
+csp-term # cubeadcs cw get
+1714098942.561495 I csp: OUT: S 20, D 1, Dp 10, Sp 35, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714098943.015024 I csp: INP: S 1, D 20, Dp 35, Sp 10, Pr 2, Fl 0x01, Sz 16 VIA: ZMQHUB
+WheelSpeeds(RPM)     Actual     Commanded     
+CubeWheel-1:         -280       -280 
+CubeWheel-2:         -6913      -6913
+CubeWheel-3:         -2459      -2456
+csp-term # cubeadcs get acp_state
+1714098943.016122 I csp: OUT: S 20, D 1, Dp 10, Sp 38, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714098943.449692 I csp: INP: S 1, D 20, Dp 38, Sp 10, Pr 2, Fl 0x01, Sz 10 VIA: ZMQHUB
+CubeADCS: ACP state frame 1 (TLM ID:132)
+============================================
+ACP run mode: 1
+Estimation mode:  6	 Control mode: 5
+ASGP4 [NOT USED!]: 0
+CubeADCS component states:
+--------------------------
+	CubeControl Signal MCU: enabled
+	CubeControl Motor MCU: enabled
+	CubeSense1 (S4S): enabled
+	CubeSense2 (Tuna-Can): enabled
+	CubeWheel1 (X): enabled
+	CubeWheel2 (Y): enabled
+	CubeWheel3 (Z): enabled
+	[NOT USED!]CubeStar: disabled
+	[NOT USED!]Motor Driver: disabled
+	[NOT USED!]GPS receiver: disabled
+	[NOT USED!]GPS LNA: disabled
+Sun over local horizon!
+ACP frame1 errors:
+-----------
+Cam1 sensor detection error (Sun not in FOV)
+Sun Senor range error (invalid readings)
+Cam2 sensor detection error (Sun not in FOV)
+resp_u8[0]:0x56    resp_u8[1]:0xF1    resp_u8[2]:0x87    resp_u8[3]:0x00    resp_u8[4]:0x30    resp_u8[5]:0x02    
+1714098943.449910 I csp: OUT: S 20, D 1, Dp 10, Sp 41, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714098943.905961 I csp: INP: S 1, D 20, Dp 41, Sp 10, Pr 2, Fl 0x01, Sz 10 VIA: ZMQHUB
+CubeADCS: ACP state frame 2 (TLM ID:224)
+============================================
+Magnetometer Sampling mode: 0
+resp_u8[0]:0x00    resp_u8[1]:0x00    resp_u8[2]:0x00    resp_u8[3]:0x00    resp_u8[4]:0x30    resp_u8[5]:0x02    
+csp-term # 
+csp-term # ping 4
+Ping node 4, timeout 1000, size 1: options: 0x0 ... 1714098943.906876 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 1 VIA: ZMQHUB (16)
+1714098944.326287 I csp: INP: S 4, D 20, Dp 42, Sp 1, Pr 2, Fl 0x01, Sz 5 VIA: ZMQHUB
+reply in 419.587 ms
+csp-term # ping 6
+Ping node 6, timeout 1000, size 1: options: 0x0 ... 1714098944.326560 I csp: OUT: S 20, D 6, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 1 VIA: ZMQHUB (16)
+timeout after 1000.336 ms
+Command 'ping 6' executed, but returned error: GS_ERROR_TIMEOUT(-110) (-110) after 1000 mS
+csp-term # 
+csp-term # ping 4
+Ping node 4, timeout 1000, size 1: options: 0x0 ... 1714098945.327731 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 1 VIA: ZMQHUB (16)
+1714098945.490253 I csp: INP: S 4, D 20, Dp 44, Sp 1, Pr 2, Fl 0x01, Sz 5 VIA: ZMQHUB
+reply in 162.707 ms
+csp-term # ax2150 hk                          
+1714098965.482899 I csp: OUT: S 20, D 4, Dp 7, Sp 45, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714098965.711761 I csp: INP: S 4, D 20, Dp 45, Sp 7, Pr 1, Fl 0x11, Sz 192 VIA: ZMQHUB
+1714098965.744811 I csp: INP: S 4, D 20, Dp 45, Sp 7, Pr 1, Fl 0x11, Sz 192 VIA: ZMQHUB
+1714098965.786074 I csp: INP: S 4, D 20, Dp 45, Sp 7, Pr 1, Fl 0x11, Sz 192 VIA: ZMQHUB
+1714098965.786232 I csp: OUT: S 20, D 4, Dp 7, Sp 46, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714098966.269968 I csp: INP: S 4, D 20, Dp 46, Sp 7, Pr 1, Fl 0x01, Sz 139 VIA: ZMQHUB
+  0x0000 temp_brd        I16 63 
+  0x0002 temp_pa         I16 58 
+  0x0004 last_rssi       I16 -96 
+  0x0006 last_rferr      I16 990 
+  0x0008 tx_count        U32 71787 
+  0x000C rx_count        U32 8153 
+  0x0010 tx_bytes        U32 17539258 
+  0x0014 rx_bytes        U32 1450545 
+  0x0018 bootcount       U16 54 
+  0x001C bootcause       U32 4 
+  0x0020 last_contact    U32 1714098966 
+  0x0024 pll_lock_tx     BL  true 
+  0x0025 pll_lock_rx     BL  true 
+  0x0026 bgnd_rssi       I16 -104 
+  0x0028 tx_duty         U8  0 
+  0x002C tot_tx_count    U32 1648453 
+  0x0030 tot_rx_count    U32 95697 
+  0x0034 tot_tx_bytes    U32 400569381 
+  0x0038 tot_rx_bytes    U32 12923822 
+  0x003C cur_rf3v3_raw   I16 135 
+  0x003E cur_rf3v3       I16 68 
+  0x0040 cur_5v_raw      I16 24 
+  0x0042 cur_5v          I16 22 
+  0x0044 hw_det          I8  1 
+  0x0045 rx_mode         U8  5 
+  0x0046 gnd_wdt_cnt     U16 39 
+  0x0048 gnd_wdt_left    U32 72650 
+csp-term # 
+csp-term # r
+Unknown command 'r'
+csp-term # rparam download 1 33
+1714098978.606927 I csp: OUT: S 20, D 1, Dp 7, Sp 47, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+Command 'rparam download 1 33' executed, but returned error: GS_ERROR_IO(-5) (-5) after 10001 mS
+csp-term # rparam getall
+Downloading table content for table 33 from server 1
+1714098988.608003 I csp: OUT: S 20, D 1, Dp 7, Sp 48, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+Command 'rparam getall' executed, but returned error: GS_ERROR_TIMEOUT(-110) (-110) after 10001 mS
+csp-term # obc end_contact 223
+1714099003.317176 I csp: OUT: S 20, D 1, Dp 25, Sp 51, Pr 2, Fl 0x01, Sz 48 VIA: ZMQHUB (16)
+Command 'obc end_contact 223' executed, but returned error: GS_ERROR_UNKNOWN(-2005) (-2005) after 1000 mS
+csp-term # watch 100 ping 4 1000 200          
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099010.972345 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.230 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099012.072752 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.467 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099013.173407 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.376 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099014.273953 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.313 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099015.374440 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.354 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099016.475063 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.249 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099017.575567 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.339 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099018.676060 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.313 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099019.776652 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.328 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099020.877207 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.309 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099021.977623 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.313 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099023.078198 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.297 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099024.178704 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.340 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099025.279297 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.575 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099026.380021 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.337 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099027.480567 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.303 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099028.581039 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.324 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099029.681527 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.298 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099030.782059 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.301 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099031.882487 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.357 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099032.983021 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.320 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099034.083600 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.222 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099035.184012 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.328 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099036.284518 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.245 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099037.385001 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.321 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099038.485487 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.317 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099039.585969 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.393 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099040.686694 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.247 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099041.787190 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.232 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099042.887607 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.289 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099043.988073 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.339 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099045.088615 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.325 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099046.189117 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.345 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099047.289622 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.330 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099048.390285 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.299 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099049.490772 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.238 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099050.591202 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.256 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099051.691614 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.306 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099052.792186 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.225 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099053.892610 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.315 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099054.993364 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.300 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099056.093876 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.485 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099057.194420 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.252 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099058.294912 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.370 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099059.395519 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.304 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099060.496115 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.334 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099061.596694 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.286 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099062.697193 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.259 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099063.797736 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.285 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099064.898168 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.315 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099065.998803 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.357 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099067.099272 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.228 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099068.199654 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.274 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099069.300088 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.320 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099070.400592 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.297 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099071.501163 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.375 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099072.601695 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.409 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099073.702261 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.303 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099074.802738 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.305 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099075.903160 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.261 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099077.003710 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714099077.217903 I csp: INP: S 4, D 20, Dp 41, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 214.382 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099077.318208 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714099077.724763 I csp: INP: S 4, D 20, Dp 42, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 406.754 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099077.825090 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714099078.227108 I csp: INP: S 4, D 20, Dp 43, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 402.217 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099078.327544 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714099078.747494 I csp: INP: S 4, D 20, Dp 44, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 420.188 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099078.847799 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714099079.234806 I csp: INP: S 4, D 20, Dp 45, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 387.203 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099079.335165 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+1714099079.760556 I csp: INP: S 4, D 20, Dp 46, Sp 1, Pr 2, Fl 0x01, Sz 204 VIA: ZMQHUB
+reply in 425.689 ms
+csp-term # 
+csp-term # obc end_contact 2231714099081.223611 I csp: INP: S 1, D 20, Dp 29, Sp 62, Pr 2, Fl 0x01, Sz 199 VIA: ZMQHUB
+Beacon: NuLIoN
+--------------------------------------------------
+-------EPS-------
+                    _________
+                   |         |                           I(mA),  lup,Ton(s),Toff(s)
+              +-------------------+  0 (H1-47) --> EN:1 [   50,    0,     0,      0]
+  1:          |                   |
+ 3691 mV ->   |  Voltage          |  1 (H1-49) --> EN:0 [    7,    0,     0,      0]
+ 1408 mA ->   | 08233 mV          |
+ 5196 mW ->   |                   |  2 (H1-51) --> EN:1 [  605,    0,     0,      0]
+  2:          |  Input            |
+ 3704 mV ->   | 01728 mA 14226 mW |  3 (H1-48) --> EN:1 [   77,    0,     0,      0]
+ 1426 mA ->   |                   |
+ 5281 mW ->   |  Output           |  4 (H1-50) --> EN:1 [   70,    0,     0,      0]
+  3:          | 00689 mA 05672 mW |
+ 3699 mV ->   |                   |  5 (H1-52) --> EN:1 [   47,    0,     0,      0]
+ 1424 mA ->   |  Efficiency:      |
+ 5267 mW ->   |  In: 90 %         |  6         --> EN:0
+              |                   |
+              |  Normal           |  7         --> EN:0
+              +-------------------+
+
+            1       2       3       4       5       6      mean
+ Temp:    +13      +9     +11      +7      +5      +5     +8.33
+
+          Boot   Cause    PPTm
+ Count:     16       1       2
+
+        WDTi2c  WDTgnd WDTcsp0 WDTcsp1
+ Count:      0      15       0       0
+  Left:    571   74624       5       5
+
+--------------------------------------------------
+-------AX100-------
+Board Temp: 7.2
+PA Temp: 7.3
+Active Config: 1
+Boot Count: 61
+Boot Cause: 0x0100
+Last Contact: 1702152673
+Tx Duty Cycle: 13
+--------------------------------------------------
+-------AX2150-------
+Board Temp: 7.3
+PA Temp: 7.2
+Boot Count: 54
+Boot Cause: 0x00
+Last Contact: 1714099079
+Tx Duty Cycle: 0
+--------------------------------------------------
+-------CubeADCS-------
+Handler enabled (adcs_leop_complete): false
+Last TLM pull time: 6 -> 1970-01-01T00:00:06Z
+Handler error: 3 2 1 3 2 1 3 2 1 3 
+Current Estimation Mode: 6
+Current Control Mode: 6
+Commanded Estimation Mode: 6
+Commanded Control Mode: 6
+ADCS-OBC transfer status: 100%
+ADCS sys pwr: 0x55
+Star+RW pwr: 0x54
+adc+acs modes: 0x66
+adcs op mode + sys_en: 0xF1
+sys_en flags: 0x87
+Roll angle: 1971
+Pitch angle: -475
+Yaw angle: -94
+Roll rate: 0
+Pitch rate: 5
+Raw rate: 0
+3V3 current: 151
+5V current: 66
+Vbatt current: 0
+MCU temp: 9
+CubeMag temp: 5088
+--------------------------------------------------
+-------OBC-------
+MCU temp: 5.6
+RAM temp: 5.8
+Boot count: 173
+Boot cause: 4
+Reset cause: 6
+OBC mode: 3 -> AUTONOMOUS
+Switch states: 0x10
+1714099081.224835 W default: Mission in the past: 1707275280 -> 2024-02-07T03:08:00Z
+--------------------------------------------------
+Tx unixtime: 1714099081 -> 2024-04-26T02:38:01Z
+--------------------------------------------------
+bcn-handler: csv file saved to /home/nuspace/NuSpace/mcts-NuLIoN/hk_packets/NuLIoN_beacon/bcn-1714099081.csv
+csp-term # rparam download 1 33      
+1714099082.791025 I csp: OUT: S 20, D 1, Dp 7, Sp 47, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714099082.955306 I csp: INP: S 1, D 20, Dp 47, Sp 7, Pr 1, Fl 0x11, Sz 112 VIA: ZMQHUB
+csp-term # rparam getall                   
+Downloading table content for table 33 from server 1
+1714099086.267813 I csp: OUT: S 20, D 1, Dp 7, Sp 48, Pr 1, Fl 0x01, Sz 10 VIA: ZMQHUB (16)
+1714099086.446235 I csp: INP: S 1, D 20, Dp 48, Sp 7, Pr 1, Fl 0x01, Sz 30 VIA: ZMQHUB
+  0x0000 adcs_hk_intv    U16 10 
+  0x0002 st_con_mode     U8  6 
+  0x0003 st_esti_mode    U8  6 
+  0x0004 nad_con_mode    U8  5 
+  0x0005 nad_esti_mode   U8  6 
+csp-term # 
+csp-term # eps output 0 0 0
+Input channel, mode (0=off, 1=on), and delay
+Channel 0 is set to 0 with delay 0
+1714099094.042818 I csp: OUT: S 20, D 2, Dp 10, Sp 51, Pr 1, Fl 0x01, Sz 4 VIA: ZMQHUB (16)
+csp-term # eps hk
+1714099096.192821 I csp: OUT: S 20, D 2, Dp 8, Sp 52, Pr 1, Fl 0x01, Sz 2 VIA: ZMQHUB (16)
+1714099096.354415 I csp: INP: S 2, D 20, Dp 52, Sp 8, Pr 1, Fl 0x01, Sz 135 VIA: ZMQHUB
+                    _________
+                   |         |                           I(mA),  lup,Ton(s),Toff(s)
+              +-------------------+  0 (H1-47) --> EN:0 [    0,    0,     0,      0]
+  1:          |                   |
+ 3691 mV ->   |  Voltage          |  1 (H1-49) --> EN:0 [    7,    0,     0,      0]
+ 1452 mA ->   | 08271 mV          |
+ 5359 mW ->   |                   |  2 (H1-51) --> EN:1 [  105,    0,     0,      0]
+  2:          |  Input            |
+ 3704 mV ->   | 01772 mA 14656 mW |  3 (H1-48) --> EN:1 [   77,    0,     0,      0]
+ 1467 mA ->   |                   |
+ 5433 mW ->   |  Output           |  4 (H1-50) --> EN:1 [   72,    0,     0,      0]
+  3:          | 00366 mA 03027 mW |
+ 3699 mV ->   |                   |  5 (H1-52) --> EN:1 [   34,    0,     0,      0]
+ 1468 mA ->   |  Efficiency:      |
+ 5430 mW ->   |  In: 90 %         |  6         --> EN:0
+              |                   |
+              |  Normal           |  7         --> EN:0
+              +-------------------+
+
+            1       2       3       4       5       6      mean
+ Temp:    +14      +9     +11      +7      +4      +5     +8.33
+
+          Boot   Cause    PPTm
+ Count:     16       1       2
+
+        WDTi2c  WDTgnd WDTcsp0 WDTcsp1
+ Count:      0      15       0       0
+  Left:    599   74593       5       5
+
+csp-term # obc end_contact 223
+1714099100.212448 I csp: OUT: S 20, D 1, Dp 25, Sp 54, Pr 2, Fl 0x01, Sz 48 VIA: ZMQHUB (16)
+1714099100.416132 I csp: INP: S 1, D 20, Dp 54, Sp 25, Pr 2, Fl 0x01, Sz 5 VIA: ZMQHUB
+OBC: exiting CONTACT mode [cspTnx=1, resp=223]
+csp-term # 
+csp-term # 1714099103.297335 I csp: INP: S 1, D 20, Dp 29, Sp 30, Pr 2, Fl 0x01, Sz 199 VIA: ZMQHUB
+Beacon: NuLIoN
+--------------------------------------------------
+-------EPS-------
+                    _________
+                   |         |                           I(mA),  lup,Ton(s),Toff(s)
+              +-------------------+  0 (H1-47) --> EN:1 [   50,    0,     0,      0]
+  1:          |                   |
+ 3691 mV ->   |  Voltage          |  1 (H1-49) --> EN:0 [    7,    0,     0,      0]
+ 1408 mA ->   | 08233 mV          |
+ 5196 mW ->   |                   |  2 (H1-51) --> EN:1 [  605,    0,     0,      0]
+  2:          |  Input            |
+ 3704 mV ->   | 01728 mA 14226 mW |  3 (H1-48) --> EN:1 [   77,    0,     0,      0]
+ 1426 mA ->   |                   |
+ 5281 mW ->   |  Output           |  4 (H1-50) --> EN:1 [   70,    0,     0,      0]
+  3:          | 00689 mA 05672 mW |
+ 3699 mV ->   |                   |  5 (H1-52) --> EN:1 [   47,    0,     0,      0]
+ 1424 mA ->   |  Efficiency:      |
+ 5267 mW ->   |  In: 90 %         |  6         --> EN:0
+              |                   |
+              |  Normal           |  7         --> EN:0
+              +-------------------+
+
+            1       2       3       4       5       6      mean
+ Temp:    +13      +9     +11      +7      +5      +5     +8.33
+
+          Boot   Cause    PPTm
+ Count:     16       1       2
+
+        WDTi2c  WDTgnd WDTcsp0 WDTcsp1
+ Count:      0      15       0       0
+  Left:    571   74624       5       5
+
+--------------------------------------------------
+-------AX100-------
+Board Temp: 7.4
+PA Temp: 7.5
+Active Config: 1
+Boot Count: 61
+Boot Cause: 0x0100
+Last Contact: 1702152673
+Tx Duty Cycle: 13
+--------------------------------------------------
+-------AX2150-------
+Board Temp: 7.6
+PA Temp: 7.0
+Boot Count: 54
+Boot Cause: 0x00
+Last Contact: 1714099100
+Tx Duty Cycle: 0
+--------------------------------------------------
+-------CubeADCS-------
+Handler enabled (adcs_leop_complete): false
+Last TLM pull time: 6 -> 1970-01-01T00:00:06Z
+Handler error: 3 2 1 3 2 1 3 2 1 3 
+Current Estimation Mode: 6
+Current Control Mode: 6
+Commanded Estimation Mode: 6
+Commanded Control Mode: 6
+ADCS-OBC transfer status: 100%
+ADCS sys pwr: 0x55
+Star+RW pwr: 0x54
+adc+acs modes: 0x66
+adcs op mode + sys_en: 0xF1
+sys_en flags: 0x87
+Roll angle: 1971
+Pitch angle: -475
+Yaw angle: -94
+Roll rate: 0
+Pitch rate: 5
+Raw rate: 0
+3V3 current: 151
+5V current: 66
+Vbatt current: 0
+MCU temp: 9
+CubeMag temp: 5088
+--------------------------------------------------
+-------OBC-------
+MCU temp: 5.8
+RAM temp: 6.0
+Boot count: 173
+Boot cause: 4
+Reset cause: 6
+OBC mode: 3 -> AUTONOMOUS
+Switch states: 0x10
+1714099103.298120 W default: Mission in the past: 1707275280 -> 2024-02-07T03:08:00Z
+--------------------------------------------------
+Tx unixtime: 1714099103 -> 2024-04-26T02:38:23Z
+--------------------------------------------------
+bcn-handler: csv file saved to /home/nuspace/NuSpace/mcts-NuLIoN/hk_packets/NuLIoN_beacon/bcn-1714099103.csv
+
+csp-term # 
+csp-term # 
+csp-term # 1714099118.351738 I csp: INP: S 1, D 20, Dp 29, Sp 35, Pr 2, Fl 0x01, Sz 199 VIA: ZMQHUB
+Beacon: NuLIoN
+--------------------------------------------------
+-------EPS-------
+                    _________
+                   |         |                           I(mA),  lup,Ton(s),Toff(s)
+              +-------------------+  0 (H1-47) --> EN:1 [   50,    0,     0,      0]
+  1:          |                   |
+ 3691 mV ->   |  Voltage          |  1 (H1-49) --> EN:0 [    7,    0,     0,      0]
+ 1408 mA ->   | 08233 mV          |
+ 5196 mW ->   |                   |  2 (H1-51) --> EN:1 [  605,    0,     0,      0]
+  2:          |  Input            |
+ 3704 mV ->   | 01728 mA 14226 mW |  3 (H1-48) --> EN:1 [   77,    0,     0,      0]
+ 1426 mA ->   |                   |
+ 5281 mW ->   |  Output           |  4 (H1-50) --> EN:1 [   70,    0,     0,      0]
+  3:          | 00689 mA 05672 mW |
+ 3699 mV ->   |                   |  5 (H1-52) --> EN:1 [   47,    0,     0,      0]
+ 1424 mA ->   |  Efficiency:      |
+ 5267 mW ->   |  In: 90 %         |  6         --> EN:0
+              |                   |
+              |  Normal           |  7         --> EN:0
+              +-------------------+
+
+            1       2       3       4       5       6      mean
+ Temp:    +13      +9     +11      +7      +5      +5     +8.33
+
+          Boot   Cause    PPTm
+ Count:     16       1       2
+
+        WDTi2c  WDTgnd WDTcsp0 WDTcsp1
+ Count:      0      15       0       0
+  Left:    571   74624       5       5
+
+--------------------------------------------------
+-------AX100-------
+Board Temp: 7.5
+PA Temp: 7.6
+Active Config: 1
+Boot Count: 61
+Boot Cause: 0x0100
+Last Contact: 1702152673
+Tx Duty Cycle: 13
+--------------------------------------------------
+-------AX2150-------
+Board Temp: 7.7
+PA Temp: 7.1
+Boot Count: 54
+Boot Cause: 0x00
+Last Contact: 1714099100
+Tx Duty Cycle: 0
+--------------------------------------------------
+-------CubeADCS-------
+Handler enabled (adcs_leop_complete): false
+Last TLM pull time: 6 -> 1970-01-01T00:00:06Z
+Handler error: 3 2 1 3 2 1 3 2 1 3 
+Current Estimation Mode: 6
+Current Control Mode: 6
+Commanded Estimation Mode: 6
+Commanded Control Mode: 6
+ADCS-OBC transfer status: 100%
+ADCS sys pwr: 0x55
+Star+RW pwr: 0x54
+adc+acs modes: 0x66
+adcs op mode + sys_en: 0xF1
+sys_en flags: 0x87
+Roll angle: 1971
+Pitch angle: -475
+Yaw angle: -94
+Roll rate: 0
+Pitch rate: 5
+Raw rate: 0
+3V3 current: 151
+5V current: 66
+Vbatt current: 0
+MCU temp: 9
+CubeMag temp: 5088
+--------------------------------------------------
+-------OBC-------
+MCU temp: 5.9
+RAM temp: 6.1
+Boot count: 173
+Boot cause: 4
+Reset cause: 6
+OBC mode: 3 -> AUTONOMOUS
+Switch states: 0x10
+1714099118.352093 W default: Mission in the past: 1707275280 -> 2024-02-07T03:08:00Z
+--------------------------------------------------
+Tx unixtime: 1714099118 -> 2024-04-26T02:38:38Z
+--------------------------------------------------
+bcn-handler: csv file saved to /home/nuspace/NuSpace/mcts-NuLIoN/hk_packets/NuLIoN_beacon/bcn-1714099118.csv
+cubeadcs tle set 5.0086 0.0000009 16.3041 305.8827 0.00000 15.25553546 357.8316 24117.03693287
+1714099121.775005 I csp: OUT: S 20, D 1, Dp 10, Sp 57, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714099122.415607 I csp: INP: S 1, D 20, Dp 57, Sp 10, Pr 2, Fl 0x01, Sz 5 VIA: ZMQHUB
+Updating SGP4 parameters:
+========================
+Inclination =	005.0086
+Eccentricity =	0.0000009
+RAAN =		016.3041
+ArgOfP =	305.8827
+Bstar =		0.0000000000
+MeanMotion =	15.25553546
+MeanAnomaly =	357.8316
+Epoch =		24117.03693287
+csp-term # cubeadcs tle save
+1714099122.415928 I csp: OUT: S 20, D 1, Dp 10, Sp 58, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714099123.088929 I csp: INP: S 1, D 20, Dp 58, Sp 10, Pr 2, Fl 0x01, Sz 5 VIA: ZMQHUB
+CubeADCS: Committing SGP4 orbital parameters to CubeCom internal FLASH memory
+csp-term # cubeadcs get acp_state
+1714099123.089232 I csp: OUT: S 20, D 1, Dp 10, Sp 59, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714099123.525809 I csp: INP: S 1, D 20, Dp 59, Sp 10, Pr 2, Fl 0x01, Sz 10 VIA: ZMQHUB
+CubeADCS: ACP state frame 1 (TLM ID:132)
+============================================
+ACP run mode: 1
+Estimation mode:  6	 Control mode: 5
+ASGP4 [NOT USED!]: 0
+CubeADCS component states:
+--------------------------
+	CubeControl Signal MCU: enabled
+	CubeControl Motor MCU: enabled
+	CubeSense1 (S4S): enabled
+	CubeSense2 (Tuna-Can): enabled
+	CubeWheel1 (X): enabled
+	CubeWheel2 (Y): enabled
+	CubeWheel3 (Z): enabled
+	[NOT USED!]CubeStar: disabled
+	[NOT USED!]Motor Driver: disabled
+	[NOT USED!]GPS receiver: disabled
+	[NOT USED!]GPS LNA: disabled
+Sun over local horizon!
+ACP frame1 errors:
+-----------
+Cam1 sensor detection error (Sun not in FOV)
+Sun Senor range error (invalid readings)
+Cam2 sensor detection error (Sun not in FOV)
+resp_u8[0]:0x56    resp_u8[1]:0xF1    resp_u8[2]:0x87    resp_u8[3]:0x00    resp_u8[4]:0x30    resp_u8[5]:0x02    
+1714099123.526629 I csp: OUT: S 20, D 1, Dp 10, Sp 60, Pr 2, Fl 0x01, Sz 73 VIA: ZMQHUB (16)
+1714099123.980149 I csp: INP: S 1, D 20, Dp 60, Sp 10, Pr 2, Fl 0x01, Sz 10 VIA: ZMQHUB
+CubeADCS: ACP state frame 2 (TLM ID:224)
+============================================
+Magnetometer Sampling mode: 0
+resp_u8[0]:0x00    resp_u8[1]:0x00    resp_u8[2]:0x00    resp_u8[3]:0x00    resp_u8[4]:0x30    resp_u8[5]:0x02    
+csp-term # 
+csp-term # 
+csp-term # obc end_contact 223
+1714099130.510179 I csp: OUT: S 20, D 1, Dp 25, Sp 61, Pr 2, Fl 0x01, Sz 48 VIA: ZMQHUB (16)
+Command 'obc end_contact 223' executed, but returned error: GS_ERROR_UNKNOWN(-2005) (-2005) after 1000 mS
+csp-term # 
+csp-term # 
+csp-term # watch 100 ping 4 1000 200
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099144.223937 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.429 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099145.324516 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.348 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099146.425112 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.300 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099147.525672 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.296 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099148.626194 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.257 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099149.726707 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.328 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099150.827150 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.248 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099151.927677 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.357 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099153.028160 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.317 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099154.128672 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.223 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099155.229082 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.250 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099156.329584 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.320 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099157.430077 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.278 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099158.530581 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.351 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099159.631173 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.268 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099160.731823 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.504 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099161.832326 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.312 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099162.932847 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.281 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099164.033430 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.335 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099165.133949 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.353 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099166.234521 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.331 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099167.335062 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.293 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099168.435663 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.382 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099169.536233 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.283 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099170.636813 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.371 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099171.737292 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.279 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099172.837845 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.337 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099173.938350 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.297 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099175.038892 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.249 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099176.139317 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.230 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099177.239810 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.334 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099178.340439 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.386 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099179.441043 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.401 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099180.541664 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.310 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099181.642301 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.381 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099182.742878 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.213 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099183.843378 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.397 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099184.943874 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.336 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099186.044380 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.303 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099187.144891 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.359 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099188.245544 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.334 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099189.346092 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.391 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099190.446701 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.240 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099191.547235 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.422 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099192.647849 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.379 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099193.748417 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.235 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099194.848889 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.222 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099195.949342 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.381 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099197.049928 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.322 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099198.150480 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.300 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099199.250987 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.224 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099200.351396 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.304 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099201.451886 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.252 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099202.552299 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.245 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099203.652785 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.302 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099204.753255 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.477 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099205.853940 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.292 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099206.954384 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.313 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099208.054891 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.281 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099209.155339 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.311 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099210.255998 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.313 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099211.356434 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.318 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099212.457000 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.252 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099213.557522 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.214 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099214.657928 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.279 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099215.758391 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.216 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099216.858783 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.401 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099217.959340 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.303 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099219.059920 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.254 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099220.160358 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.305 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099221.260879 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.328 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099222.361367 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.255 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099223.461806 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.443 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099224.562449 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.255 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099225.662957 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.284 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099226.763394 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.300 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099227.863919 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.357 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099228.964510 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.285 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099230.065029 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.430 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099231.165696 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.330 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099232.266294 I csp: OUT: S 20, D 4, Dp 1, Sp 45, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.242 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099233.366707 I csp: OUT: S 20, D 4, Dp 1, Sp 46, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.319 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099234.467307 I csp: OUT: S 20, D 4, Dp 1, Sp 47, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.551 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099235.568004 I csp: OUT: S 20, D 4, Dp 1, Sp 48, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.255 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099236.668506 I csp: OUT: S 20, D 4, Dp 1, Sp 51, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.385 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099237.769151 I csp: OUT: S 20, D 4, Dp 1, Sp 52, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.366 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099238.869749 I csp: OUT: S 20, D 4, Dp 1, Sp 54, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.288 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099239.970269 I csp: OUT: S 20, D 4, Dp 1, Sp 57, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.270 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099241.070718 I csp: OUT: S 20, D 4, Dp 1, Sp 58, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.401 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099242.171282 I csp: OUT: S 20, D 4, Dp 1, Sp 59, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.300 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099243.271800 I csp: OUT: S 20, D 4, Dp 1, Sp 60, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.349 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099244.372312 I csp: OUT: S 20, D 4, Dp 1, Sp 61, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.235 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099245.472727 I csp: OUT: S 20, D 4, Dp 1, Sp 62, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.292 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099246.573182 I csp: OUT: S 20, D 4, Dp 1, Sp 63, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.273 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099247.673721 I csp: OUT: S 20, D 4, Dp 1, Sp 32, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.422 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099248.774295 I csp: OUT: S 20, D 4, Dp 1, Sp 33, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.318 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099249.874870 I csp: OUT: S 20, D 4, Dp 1, Sp 34, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.310 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099250.975456 I csp: OUT: S 20, D 4, Dp 1, Sp 35, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.314 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099252.075936 I csp: OUT: S 20, D 4, Dp 1, Sp 38, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.285 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099253.176349 I csp: OUT: S 20, D 4, Dp 1, Sp 41, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.357 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099254.277043 I csp: OUT: S 20, D 4, Dp 1, Sp 42, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.332 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099255.377544 I csp: OUT: S 20, D 4, Dp 1, Sp 43, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.342 ms
+Ping node 4, timeout 1000, size 200: options: 0x0 ... 1714099256.478046 I csp: OUT: S 20, D 4, Dp 1, Sp 44, Pr 2, Fl 0x01, Sz 200 VIA: ZMQHUB (16)
+timeout after 1000.348 ms
+csp-term # 
+csp-term # 

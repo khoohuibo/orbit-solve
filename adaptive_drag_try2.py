@@ -174,7 +174,7 @@ der_z_list = []
 
 extrapDate = start_date
 #extrapDate = AbsoluteDate(2024, 4, 1, 0, 0, 00.000, utc)
-finalDate = extrapDate.shiftedBy(60.0*60*24*365*2)
+finalDate = extrapDate.shiftedBy(60.0*60*24*365*3)
 first = False
 sun = CelestialBodyFactory.getSun();
 sun = PVCoordinatesProvider.cast_(sun)  # But we want the PVCoord interface
@@ -191,14 +191,20 @@ firstSequence = [
 secondSequence = [
     AbsoluteDate(2025, 10, 1, 0, 0, 00.000, utc),
     AbsoluteDate(2025, 11, 1, 0, 0, 00.000, utc),
-    AbsoluteDate(2025, 11, 18, 0, 0, 00.000, utc),
+    AbsoluteDate(2025, 11, 10, 0, 0, 00.000, utc),
     [False, False, False], [False, False]]
 
 thirdSequence = [
     AbsoluteDate(2025, 11, 18, 0, 0, 00.000, utc),
-    AbsoluteDate(2025, 12, 1, 0, 0, 00.000, utc),
-    AbsoluteDate(2025, 12, 9, 0, 0, 00.000, utc),
+    AbsoluteDate(2025, 11, 23, 0, 0, 00.000, utc),
+    AbsoluteDate(2025, 11, 25, 0, 0, 00.000, utc),
     [False, False, False], [False, True]]
+
+fourSequence = [
+    AbsoluteDate(2025, 12, 1, 0, 0, 00.000, utc),
+    AbsoluteDate(2025, 12, 5, 0, 0, 00.000, utc),
+    AbsoluteDate(2025, 12, 10, 0, 0, 00.000, utc),
+    [False, False, False], [False, False]]
 
 og_driver.get(1).setValue(2.2)
 dervied_driver.get(1).setValue(35.2)
@@ -259,6 +265,8 @@ while (extrapDate.compareTo(finalDate) <= 0.0):
     secondSequence[3] = manuever_sequence(extrapDate, og_driver, dervied_driver, seqeunce=secondSequence)
 
     thirdSequence[3] = manuever_sequence(extrapDate, og_driver, dervied_driver, seqeunce=thirdSequence)
+
+    fourSequence[3] = manuever_sequence(extrapDate, og_driver, dervied_driver, seqeunce=fourSequence)
     date.append(absolutedate_to_datetime(extrapDate))
 
     print(extrapDate, end="\r")
@@ -274,39 +282,15 @@ with open('output_sso/beta_three_sso_june_2025_start_same_delayed.csv', 'w') as 
 
     f.close()
 
-fig , axs = plt.subplots(4,3)
-fig.suptitle(str(start_date) + "three years sso")
-axs[0,0].plot(date, beta_list_sun)
-axs[0,0].plot(date, derived_beta_list_sun)
-axs[0,0].set_title("beta angle")
-axs[0,1].plot(date, sma_list)
-axs[0,1].plot(date, der_sma_list)
-axs[0,1].set_title("sma_list")
-axs[0,1].legend(['a', 'der_a'])
-axs[0,2].plot(date, i_list)
-axs[0,2].set_title("i_list")
-axs[1,0].plot(date, ecc_list)
-axs[1,0].set_title("ecc_list")
-axs[1,1].plot(date, raan_list)
-axs[1,1].set_title("raan_list")
-axs[1,2].plot(date, aop_list)
-axs[1,2].set_title("aop_list")
-axs[2,0].plot(date, lv_list)
-axs[2,0].set_title("lv_list")
-axs[2,1].plot(date, dist_list)
-axs[2,1].set_title("dist_list")
+#fig , axs = plt.subplots(2,1)
+#fig.suptitle(str(start_date) + "three years sso")
 
-axs[3,0].plot(date, x_list)
-axs[3,0].plot(date, der_x_list)
-axs[3,0].set_title("x_list")
-axs[3,0].legend(['x, der_x'])
-axs[3,1].plot(date, y_list)
-axs[3,1].plot(date, der_y_list)
-axs[3,1].set_title("y_list")
-axs[3,1].legend(['y, der_y'])
-axs[3,2].plot(date, z_list)
-axs[3,2].plot(date, der_z_list)
-axs[3,2].set_title("z_list")
-axs[3,2].legend(['z, der_z'])
+#axs[0,1].plot(date, sma_list)
+#axs[0,1].plot(date, der_sma_list)
+#axs[0,1].set_title("sma_list")
+#axs[0,1].legend(['a', 'der_a'])
+
+plt.plot(date, dist_list)
+#plt.set_title("dist_list")
 
 plt.show()
