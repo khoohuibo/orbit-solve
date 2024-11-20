@@ -113,6 +113,7 @@ def add_dsst_force_models(propagator, earth, max_drag=False):
     else:
         cross_section = 0.32
     cd = 2.2
+    
     isotropic_drag = IsotropicDrag(cross_section, cd)
 
     drag_drivers = isotropic_drag.getDragParametersDrivers()
@@ -120,6 +121,7 @@ def add_dsst_force_models(propagator, earth, max_drag=False):
     drag_force = DragForce(atmosphere, isotropic_drag)
 
     gravityProvider = GravityFieldFactory.getUnnormalizedProvider(10, 10)
+
     propagator.addForceModel(DSSTZonal(gravityProvider))
 
     propagator.addForceModel(DSSTAtmosphericDrag(drag_force, gravityProvider.getMu()))
@@ -139,6 +141,7 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
         propagator.addForceModel(HolmesFeatherstoneAttractionModel(FramesFactory.getITRF(IERSConventions.IERS_2010, True), gravityProvider))
 
     if drag:
+        print("drag active")
         cswl = CssiSpaceWeatherData("SpaceWeather-All-v1.2.txt")
 
         atmosphere = NRLMSISE00(cswl, CelestialBodyFactory.getSun(), earth)
@@ -157,7 +160,7 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
         propagator.addForceModel(drag_force)
     
     if solar:
-
+        print("solar active")
         rad = IsotropicRadiationSingleCoefficient(0.24, 1.0)
         sol_pressure_force = SolarRadiationPressure(CelestialBodyFactory.getSun(), earth , rad)
         sol_pressure_force.addOccultingBody(CelestialBodyFactory.getMoon(), Constants.MOON_EQUATORIAL_RADIUS)
@@ -174,7 +177,7 @@ def add_force_models(propagator, earth, ra, gravity=True, drag=True, solar=True,
     
     return propagator, drag_drivers
 
-def set_up_prop(i, omega, raan, lv, epochDate, inertialFrame, ITRF, rp=0, ra=0, a=False, e=False, initialOrbit=False, DSST=True, max_drag=False):
+def set_up_prop(i, omega, raan, lv, epochDate, inertialFrame, ITRF, rp=0, ra=0, a=False, e=False, initialOrbit=False, DSST=False, max_drag=False):
     if a == False:
         a = (rp + ra + 2 * Constants.WGS84_EARTH_EQUATORIAL_RADIUS) / 2.0    
     if e == False:
@@ -183,13 +186,14 @@ def set_up_prop(i, omega, raan, lv, epochDate, inertialFrame, ITRF, rp=0, ra=0, 
     earth = OneAxisEllipsoid(Constants.WGS84_EARTH_EQUATORIAL_RADIUS, 
                             Constants.WGS84_EARTH_FLATTENING, 
                             ITRF)
+    
 
     ## Orbit construction as Keplerian
     if initialOrbit == False:
         initialOrbit = KeplerianOrbit(a, e, i, omega, raan, lv,
                                     PositionAngleType.TRUE,
                                     inertialFrame, epochDate, Constants.WGS84_EARTH_MU)
-    satellite_mass = 16.0  # The models need a spacecraft mass, unit kg.
+    satellite_mass = 10.0  # The models need a spacecraft mass, unit kg.
     initialState = SpacecraftState(initialOrbit, satellite_mass) 
     
     
@@ -211,7 +215,7 @@ def set_up_prop(i, omega, raan, lv, epochDate, inertialFrame, ITRF, rp=0, ra=0, 
         propagator.setOrbitType(OrbitType.CARTESIAN)
         propagator.setInitialState(initialState)
 
-        propagator, drag_drivers = add_force_models(propagator, earth, a/2, drag=False, solar=False,  albedo=False, max_drag=max_drag)
+        propagator, drag_drivers = add_force_models(propagator, earth, a/2, drag=True, solar=True,  albedo=False, max_drag=max_drag)
     else:
         minStep = initialState.getKeplerianPeriod()
         maxStep = 100. * minStep

@@ -31,8 +31,8 @@ vm = orekit.initVM()
 setup_orekit_curdir()
 utc = TimeScalesFactory.getUTC()
 satellite_mass = 16
-start_date = AbsoluteDate(2025, 6, 1, 0, 0, 00.000, utc)
-astro_star_date = Time('2025-06-01T00:00:00.000000000', format='isot', scale='utc')
+start_date = AbsoluteDate(2025, 10, 1, 0, 0, 00.000, utc)
+astro_star_date = Time('2025-10-01T00:00:00.000000000', format='isot', scale='utc')
 
 ra = 600.14 * 1000        #  Apogee
 rp = 600.139999 * 1000         #  Perigee
@@ -40,8 +40,8 @@ i = math.radians(97.7532)      # inclination (SSO)
 #i = math.radians(0.0)
 omega = math.radians(0.0)   # perigee argument
 accurate_raan_sso_1 = raan_from_ltan(astro_star_date, ltan=10.5 * u.hourangle).value - 360
-raan = math.radians(accurate_raan_sso_1)  # right ascension of ascending node (SSO)
-#raan = math.radians(0.0)
+#raan = math.radians(accurate_raan_sso_1)  # right ascension of ascending node (SSO)
+raan = math.radians(344.920)
 lv = math.radians(0.0)    # True anomaly
 
 
@@ -110,12 +110,17 @@ aop_list = []
 lv_list = []
 
 fov_list = []
+fov_list_moon = []
 
 
 finalDate = extrapDate.shiftedBy(60.0*60*24*365*3)
 first = False
 sun = CelestialBodyFactory.getSun()
-sun = PVCoordinatesProvider.cast_(sun) 
+sun = PVCoordinatesProvider.cast_(sun)
+moon = CelestialBodyFactory.getMoon()
+moon = PVCoordinatesProvider.cast_(moon)
+terra = CelestialBodyFactory.getEarth()
+terra = PVCoordinatesProvider.cast_(terra) 
 
 while (extrapDate.compareTo(finalDate) <= 0.0):  
 
@@ -126,6 +131,8 @@ while (extrapDate.compareTo(finalDate) <= 0.0):
 
     pos_sun = sun.getPVCoordinates(extrapDate, inertialFrame).getPosition()
 
+    pos_moon = moon.getPVCoordinates(extrapDate, inertialFrame).getPosition()
+
     beta_angle_new = 0.5 * math.pi - Vector3D.angle(pos_sun, pv.getMomentum())
 
     beta_list_sun.append(math.degrees(beta_angle_new))
@@ -134,20 +141,22 @@ while (extrapDate.compareTo(finalDate) <= 0.0):
     #print(pv_state.toStaticTransform().getInverse())
     #print(fov_center)
     FOV_angle = Vector3D.angle(pos_sun, fov_center)
+    FOV_angle_moon = Vector3D.angle(pos_moon, fov_center)
     fov_list.append(math.degrees(FOV_angle))
+    fov_list_moon.append(math.degrees(FOV_angle_moon))
 
     date.append(absolutedate_to_datetime(extrapDate))
     print(extrapDate, end="\r")
     extrapDate = extrapDate.shiftedBy(24*3600.0)
 
-header = ['date', 'beta_angle_sun', 'fov-to-sun']
+header = ['date', 'beta_angle_sun', 'fov-to-sun', 'fov-to-moon']
 with open('output_sso/scenario_vector.csv', 'w') as f:
     writer = csv.writer(f)
 
     writer.writerow(header)
     for j in range(len(date)):
         0
-        writer.writerow([date[j], beta_list_sun[j], fov_list[j]])
+        writer.writerow([date[j], beta_list_sun[j], fov_list[j], fov_list_moon[j]])
 
     f.close()
 
@@ -174,11 +183,13 @@ print("--------------------------")
 #print(derived_beta_list_sun[idx])
 
 
-fig , axs = plt.subplots(2,1)
+fig , axs = plt.subplots(3,1)
 fig.suptitle(str(start_date) + "three years sso")
 axs[0].plot(date, beta_list_sun)
 axs[0].set_title("beta angle")
 axs[1].plot(date, fov_list)
 axs[1].set_title("fov angle")
+axs[2].plot(date, fov_list_moon)
+axs[2].set_title("fov angle")
 
 plt.show()

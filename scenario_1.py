@@ -28,15 +28,15 @@ vm = orekit.initVM()
 setup_orekit_curdir()
 utc = TimeScalesFactory.getUTC()
 satellite_mass = 16
-start_date = AbsoluteDate(2025, 6, 1, 0, 0, 00.000, utc)
+start_date = AbsoluteDate(2025, 10, 1, 0, 0, 00.000, utc)
 astro_star_date = Time('2025-06-01T00:00:00.000000000', format='isot', scale='utc')
 
 ra = 600.14 * 1000        #  Apogee
 rp = 600.139999 * 1000         #  Perigee
 i = math.radians(97.7532)      # inclination (SSO)
 omega = math.radians(0.0)   # perigee argument
-accurate_raan_sso_1 = raan_from_ltan(astro_star_date, ltan=10.5 * u.hourangle).value - 360
-raan = math.radians(accurate_raan_sso_1)  # right ascension of ascending node (SSO)
+accurate_raan_sso_1 = raan_from_ltan(astro_star_date, ltan=10.5 * u.hourangle).value
+raan = math.radians(344.92)  # right ascension of ascending node (SSO)
 lv = math.radians(0.0)    # True anomaly
 
 epochDate = start_date
@@ -220,10 +220,10 @@ while (extrapDate.compareTo(finalDate) <= 0.0):
 
     date.append(absolutedate_to_datetime(extrapDate))
     print(extrapDate, end="\r")
-    extrapDate = extrapDate.shiftedBy(24*3600.0)
+    extrapDate = extrapDate.shiftedBy(3600.0)
 
 header = ['date', 'distance', 'beta_angle_sun', 'derived_beta_angle_sun', 'sma', 'inc', 'ecc', 'raan', 'aop', 'lv']
-with open('output_sso/scenario_1.csv', 'w') as f:
+with open('output_sso/scenario_1_hour.csv', 'w') as f:
     writer = csv.writer(f)
 
     writer.writerow(header)
@@ -252,10 +252,6 @@ val, idx = max((val, idx) for (idx, val) in enumerate(derived_beta_list_sun))
 print(date[idx])
 print(OrbitType.KEPLERIAN.convertType(derived_state_list[idx].getOrbit()))
 print(derived_beta_list_sun[idx])
-
-for i in range(len(date)):
-    if dist_list[i] <= 1000:
-        print("date: %s, dist: %f" % (date[i], dist_list[i]))
 
 fig , axs = plt.subplots(3,3)
 fig.suptitle(str(start_date) + "three years sso")
